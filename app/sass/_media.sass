@@ -1,0 +1,555 @@
+@import "vars"
+@import "grid"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1439px)
+	main
+		width: 1004px
+	.filter-parameters
+		.filter-parameters_list
+			.filter-parameters_item
+				img
+					height: 80px
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.main-banner
+		.main-menu
+			.container
+				width: 980px
+				padding: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	body
+		padding-top: 10px
+	.main-banner
+		.main-menu
+			.main-menu_btn-toggle
+				top: 50px
+		.decision-pointer
+			h5
+				font-size: 18px
+	.how-it-work
+		.how-it-work_sub-title
+			h4
+				+col(7)
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	body
+		padding-top: 0
+		padding-left: 0
+		padding-right: 0
+	main
+		width: 100%
+	section
+		&::before
+			content: ''
+			width: 90%
+	.main-banner
+		.main-menu
+			.container
+				width: 100%
+				padding: 10px
+			.main-menu_btn-toggle
+				top: 40px
+				margin-left: -13px
+		.main-banner_img
+			.main-banner_img-item
+				+col(5)
+	.why-is-this
+		.why-is-this_items
+			.why-is-this_item
+				+col(4)
+				padding: 0 15px
+				box-sizing: border-box
+	.how-it-work
+		.how-it-work_items
+			.how-it-work_item3
+				.how-it-work_item-svg
+					.phone_blue
+						min-width: 320px
+						max-width: 320px
+	.rotation-vector
+		.rotation-vector_info
+			.rotation-vector_item
+				+col(5)
+	.filter-parameters		
+		.filter-parameters_list
+			+row(between)
+			.filter-parameters_item
+				+col(4)
+				margin-bottom: 40px
+				&:nth-child(4)
+					+col(4)
+					margin-left: 15%
+				&:nth-child(5)
+					+col(4)
+					margin-right: 15%
+		.several-operation
+			.several-operation_sub-title
+				+col(6)
+		.filter-parameters_sub-title2
+			h4
+				+col(10)
+	.geohash
+		.geohash_content
+			.geohash_slider-desc1
+				+col(5)
+			.geohash_slider-desc2
+				// +col(11)
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-banner
+		.header
+			.menu_btn
+				+col(2)
+			.logo
+				+col(8)
+			.localization
+				+col(2)
+		.main-banner_img
+			.main-banner_img-item
+				+col(5)
+				.main-banner_phone
+					> img
+						width: 280px
+					.main-banner_phone-gif
+						width: 170px
+						top: 67px
+						left: 74px
+	.why-is-this
+		.why-is-this_items
+			+column()
+			.why-is-this_item
+				+col(7)
+				margin-bottom: 100px
+		.decision-pointer
+			margin: 0
+			.decision-pointer_lines
+				display: none
+	.features
+		.features_list
+			+row(between)
+			.features_item
+				+col(6)
+		.features_sub-title
+			h4
+				+col(8)
+	.how-it-work
+		.how-it-work_items
+			.how-it-work_item
+				.how-it-work_item-text
+					p
+						width: 100%
+						font-size: 14px
+						line-height: 1.29
+						box-sizing: border-box
+			.how-it-work_item1
+				margin-bottom: 30px
+			.how-it-work_item2, .how-it-work_item4
+				padding: 0
+				margin: 0
+			.how-it-work_item3
+				height: 165px
+				.how-it-work_item-svg
+					.phone_blue
+						min-width: 230px !important
+						max-width: 230px !important
+						bottom: 70px
+					svg
+						display: none
+					.svg-center
+						height: 275px
+	.android-sensors
+		.android-sensors_sub-title
+			h4
+				+col(10)
+	.rotation-vector
+		.rotation-vector_item-logo
+			background-position: 51% 50%
+	.filter-parameters
+		.filter-parameters_list
+			+row(center)
+			.filter-parameters_item
+				+col(6)
+				&:nth-child(5)
+					+col(4)
+					margin: 0
+		.several-operation
+			p
+				+col(8)
+	.geohash
+		.geohash_content
+			p
+				+col(8)
+		.geohash_sub-title
+			h4
+				+col(10)
+	.use-and-develop
+		.use-and-develop_info
+			p
+				+col(6)
+@media only screen and (max-width : 576px)
+	.main-banner
+		h1
+			font-size: 30px
+		.main-banner_img
+			.main-banner_img-item 
+				.main-banner_phone
+					> img
+						width: 230px
+					.main-banner_phone-gif
+						width: 139px
+						top: 56px
+						left: 61px
+				.iphone-left
+					margin-right: 50px
+				.main-banner_img-item_info
+					img
+						width: 16px
+					.cross
+						font-size: 14px
+					.arrow
+						font-size: 14px
+				.without_filter
+					margin-left: -36px
+				.with_filter
+					margin-right: -16px
+	.features
+		.features_list
+			+column()
+			.features_item
+				+col(8)
+	.how-it-work
+		.how-it-work_sub-title
+			h4
+				+col(10)
+		.how-it-work_items
+			+column()
+			.how-it-work_item
+				+col(8)
+				display: flex
+				align-items: flex-start
+				margin-top: 45px
+				padding: 0
+				text-align: left
+				display: flex
+				flex-direction: column
+				align-items: center
+				.how-it-work_item-text
+					margin-top: 5px
+					text-align: center
+					h5
+						font-size: 18px
+						margin-bottom: 8px
+					p
+						padding: 0
+			.how-it-work_item1
+				margin-bottom: 0
+			.how-it-work_item3
+				order: 4
+				.how-it-work_item-svg
+					width: 100%
+					svg
+						display: none
+					.phone_blue
+						min-width: 300px !important
+						max-width: 300px !important
+						bottom: 15px
+			.how-it-work_item4
+				margin-bottom: 30px
+			.how-it-work_item6
+				order: 5
+	.rotation-vector
+		.rotation-vector_item-logo
+			height: 250px
+		.rotation-vector_sub-title
+			h4
+				+col(12)
+		.rotation-vector_info
+			+column()
+			.rotation-vector_item
+				+col(12)
+				margin-bottom: 55px
+				h5
+					margin-top: 10px
+					font-size: 18px
+				p
+					font-size: 14px
+				&:first-child
+					margin-right: 0
+					text-align: left
+			.plus
+				right: 50%
+				top: 105%
+			.equal
+				left: 50%
+	.filter-parameters
+		.several-operation
+			.several-operation_sub-title
+				+col(8)
+	.geohash
+		.geohash_content
+			h4
+				+col(7)
+			.geohash_slider-desc1
+				+col(6)
+			.geohash_slider-desc2
+				+col(8)
+			.geohash_slider
+				width: 260px
+				&::before
+					content: ''
+					background-size: 100%
+					width: 380px
+					top: -50px
+					left: 50%
+					transform: translateX(-50%)
+				.geohash_slide
+					width: 300px
+					height: 165px
+					margin-top: 147px
+			.geohash_slider2
+				&::before
+				content: ''
+				top: -136px
+	.footer
+		.footer_text
+			p
+				+col(10)
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+	h2
+		font-size: 30px
+	h4
+		font-size: 20px
+	section
+		padding: 50px 0
+	.main-banner
+		padding-top: 20px
+		.main-menu
+			.main-menu_btn-toggle
+				top: 15px
+		.header
+			margin-bottom: 30px
+			.menu_btn
+				+col(2)
+			.logo
+				+col(9)
+				img
+					width: 235px
+					margin: 0
+					margin-right: auto
+					margin-left: -20px
+				p
+					display: none
+			.localization
+				display: none
+		.main-banner_img
+			.main-banner_img-item
+				+col(6)
+				.main-banner_phone
+					> img
+						width: 200px
+					.main-banner_phone-gif
+						width: 122px
+						top: 48px
+						left: 53px
+				.iphone-left
+					margin-right: 60px
+	.why-is-this
+		.why-is-this_items
+			.why-is-this_item
+				+col(12)
+	.features
+		.features_list
+			.features_item
+				+col(12)
+				justify-content: flex-start
+		.features_sub-title
+        	h4
+            	+col(12)
+	.android-sensors
+		.android-sensors_sub-title
+			h4
+				+col(12)
+	.rotation-vector
+		.rotation-vector_item-logo
+			background-position: 55% 50%
+			img
+				width: 240px
+	.filter-parameters
+		.filter-parameters_sub-title
+			h4
+				+col(12)
+		.filter-parameters_list
+			+row(around)
+			.filter-parameters_item
+				+col(6)
+				margin-bottom: 40px
+				img
+					width: auto
+					height: 50px
+				&:nth-child(5)
+					+col(8)
+		.several-operation
+			.several-operation_sub-title
+				+col(12)
+			p
+				+col(12)
+			img
+				height: 60px
+			.pic-4
+				width: auto
+		.filter-parameters_sub-title2
+			h4
+				+col(12)
+	.geohash
+		.geohash_content
+			p
+				+col(12)
+			h4
+				+col(12)
+			.geohash_slider
+				+col(12)
+			.geohash_slider-desc1
+				+col(10)
+			.geohash_slider-desc2
+				+col(11)
+			.geohash_slider
+				width: 260px
+				&::before
+					content: ''
+					background-size: 100%
+					width: 380px
+					top: -30px
+					left: 50%
+					transform: translateX(-50%)
+				.geohash_slide
+					width: 300px
+					height: 165px
+					margin-top: 167px
+		.geohash_sub-title
+			h4
+				+col(12)
+	.use-and-develop
+		.use-and-develop_info
+			p
+				+col(12)
+	.footer
+		h2
+			+col(12)
+		.footer_text
+			p
+				+col(12)
+				font-size: 14px
+		.footer_soc-icons
+			display: flex
+			justify-content: space-between
+			a
+				padding: 0
+@media only screen and (max-width : 420px)
+	p
+		font-size: 14px
+	.main_links
+		img
+			width: 28px
+			padding: 0 3px !important
+		a
+			font-size: 11px
+			span
+				display: flex
+				flex-direction: column
+				span
+					
+	.main-banner
+		.main-banner_img
+			.main-banner_img-item
+				+col(6)
+				.main-banner_phone
+					> img
+						width: 180px
+					.main-banner_phone-gif
+						width: 109px
+						top: 43px
+						left: 48px
+		.header
+			.logo
+				+col(10)
+				img
+					margin: 0
+					margin-right: auto
+		.main-menu
+			.main-menu_list
+				a
+					font-size: 22px
+	.why-is-this
+		.why-is-this_items
+			.why-is-this_item
+				margin-bottom: 40px
+		.decision-pointer
+			margin-top: 30px
+	.rotation-vector
+		.and-if-briefly
+			.and-if-briefly_images
+				.and-if-briefly_img3
+					.equal
+						margin-left: 30%
+		.and-if-briefly
+			.and-if-briefly_images
+				.and-if-briefly_img
+					.plus
+						margin: 0 25px
+					.equal
+						margin: 0 25px
+	.geohash
+		.geohash_content
+			.geohash_slider
+				width: 205px
+				height: 320px
+				&::before
+					content: ''
+					background-size: 100%
+					width: 300px
+					top: -125px
+					left: 50%
+					transform: translateX(-50%)
+				.geohash_slide
+					width: 205px
+					height: 130px
+					margin-top: 119px
+					p
+						margin-top: -140px
+						.geohash_slider2
+			.geohash_slider2
+				height: 180px
+				&::before
+				content: ''
+				top: -100px
+	.use-and-develop
+		.main_links
+			img
+				padding: 0
+			a
+				font-size: 11px
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	// 
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/

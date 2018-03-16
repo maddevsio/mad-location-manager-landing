@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="361px" height="364px" viewBox="0 0 361 364" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>rounds</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="rounds" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.370000005" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Group" stroke="#0155FC">
+            <circle id="Oval-3" stroke-opacity="0.9" cx="179" cy="182" r="20"></circle>
+            <circle id="Oval-3-Copy" stroke-opacity="0.8" cx="178.5" cy="182.5" r="40.5"></circle>
+            <circle id="Oval-3-Copy-2" stroke-opacity="0.7" cx="178.5" cy="181.5" r="60.5"></circle>
+            <circle id="Oval-3-Copy-3" stroke-opacity="0.6" cx="179" cy="182" r="81"></circle>
+            <ellipse id="Oval-3-Copy-4" stroke-opacity="0.5" cx="177.5" cy="182" rx="99.5" ry="101"></ellipse>
+            <ellipse id="Oval-3-Copy-5" stroke-opacity="0.4" cx="177" cy="182.5" rx="120" ry="121.5"></ellipse>
+            <ellipse id="Oval-3-Copy-6" stroke-opacity="0.3" cx="177" cy="181.5" rx="140" ry="141.5"></ellipse>
+            <ellipse id="Oval-3-Copy-7" stroke-opacity="0.2" cx="180.5" cy="182" rx="160.5" ry="162"></ellipse>
+            <ellipse id="Oval-3-Copy-8" stroke-opacity="0.124773551" cx="180.5" cy="182" rx="180.5" ry="182"></ellipse>
+        </g>
+    </g>
+</svg>

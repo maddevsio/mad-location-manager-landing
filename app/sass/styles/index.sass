@@ -1,0 +1,924 @@
+@import "../fonts"
+@import "../vars"
+@import "../grid"
+
+// --------- Base style site elements ---------//
+*
+    outline: none
+
+body
+    background-color: $accent
+    padding: 48px 0
+    padding-bottom: 0
+    overflow-x: hidden
+    min-width: 320px
+main
+    width: 1346px
+    margin: 0 auto
+    background-color: $white
+    display: block
+h1, h2
+    width: 100%
+    font-size: 52px
+    font-family: $ClotherBold
+    color: $section-title
+    text-align: center
+h4
+    width: 100%
+    font-size: 26px
+    font-family: $ClotherBold
+    color: $section-title
+    text-align: center
+    line-height: 1.38
+h5
+    font-size: 20px
+    font-family: serif
+    font-family: $ClotherBold
+    color: $section-title
+    font-weight: bold
+.fork-me-github
+    display: flex
+    align-items: center
+    background-color: $accent
+    color: $white
+    border: none
+    padding: 15px 30px
+    font-family: $ClotherBold
+    font-size: 18px
+    i
+        font-size: 26px
+        margin-right: 10px
+p
+    font-family: $SFProDisplayRegular
+    font-size: 16px
+    color: $color-parag
+    font-weight: normal
+    line-height: 1.63
+    margin: 0
+a
+    color: $accent
+    font-size: 14px
+    font-family: $SFProDisplayRegular
+    text-decoration: none
+section
+    padding: 100px 0
+    position: relative
+    &::before
+        +container()
+        content: ''
+        width: 100%
+        height: 1px
+        position: absolute
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+        border-bottom: 0.5px solid #ddd
+        opacity: 0.5
+.container
+    +container()
+.main_links    
+    +row(center)
+    position: relative
+    .or
+        position: absolute
+        top: -80%
+        left: 50%
+        transform: translateX(-50%)
+        font-family: $SFProDisplayRegular
+        font-size: 16px
+        color: #ddd
+    a
+        +col(3)
+        display: flex
+        align-items: center
+        white-space: nowrap
+        img
+            padding: 0 8px
+    .main_links_doc
+        justify-content: center
+.plus
+    position: relative
+    &::before
+        content: ''
+        width: 15px
+        height: 2px
+        display: block
+        position: absolute
+        top: 25px
+        left: 0
+        transform: translate(-50%)
+        background-color: #222
+    &::after
+        content: ''
+        width: 15px
+        height: 2px
+        display: block
+        position: absolute
+        top: 25px
+        left: 0
+        transform: translateX(-50%) rotate(90deg)
+        background-color: #222
+.equal
+    position: relative
+    &::before
+        content: ''
+        width: 15px
+        height: 2px
+        display: block
+        position: absolute
+        top: 22px
+        left: 0
+        transform: translateX(-50%)
+        background-color: #222
+    &::after
+        content: ''
+        width: 15px
+        height: 2px
+        display: block
+        position: absolute
+        top: 28px
+        left: 0
+        transform: translateX(-50%)
+        background-color: #222
+.scroll_off
+    overflow: hidden
+.dashoffset
+    stroke-dashoffset: 500 !important
+.dashoffset-android-sensors
+    stroke-dashoffset: 0 !important
+.path
+  stroke-dasharray: 500
+  stroke-dashoffset: 500
+  animation: dash 2.5s cubic-bezier(0.645, 0.045, 0.355, 1)
+@keyframes dash
+  from
+    stroke-dashoffset: 0
+  to
+    stroke-dashoffset: 500
+.android-path
+  stroke-dasharray: 160
+  stroke-dashoffset: 160
+  animation: android-path 2s cubic-bezier(0.645, 0.045, 0.355, 1)
+@keyframes android-path
+  from
+    stroke-dashoffset: 160
+  to
+    stroke-dashoffset: 0
+    
+.android-path_bg1
+  stroke-dasharray: 9000
+  stroke-dashoffset: 9000
+  animation: android-path_bg1 8s linear infinite
+@keyframes android-path_bg1
+  0%
+    stroke-dashoffset: 9000
+    opacity: 0
+  50%
+    opacity: .5
+  100%
+    stroke-dashoffset: 0
+    opacity: 0
+
+.android-path_bg2
+  stroke-dasharray: 8000
+  stroke-dashoffset: 8000
+  animation: android-path_bg2 8s linear infinite
+  animation-delay: 1s
+  transition: all 3s ease
+@keyframes android-path_bg2
+  0%
+    stroke-dashoffset: 9000
+    opacity: 0
+  50%
+    opacity: .5
+  100%
+    stroke-dashoffset: 0
+    opacity: 0
+    
+.android-path_bg3
+  stroke-dasharray: 8000
+  stroke-dashoffset: 8000
+  animation: android-path_bg3 8s linear infinite
+  animation-delay: 2s
+@keyframes android-path_bg3
+  0%
+    stroke-dashoffset: 9000
+    opacity: 0
+  50%
+    opacity: .5
+  100%
+    stroke-dashoffset: 0
+    opacity: 0
+/////////////////////////Custom Style//////////////////////
+.main-banner
+    padding-top: 40px
+    background-position: center
+    background-size: cover
+    position: relative
+    .main-menu
+        width: 100%
+        min-height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        background-color: $white
+        display: none
+        z-index: 12
+        overflow: scroll
+        .container
+            position: relative
+        .main-menu_btn-toggle
+            width: 50px
+            height: 50px
+            position: absolute
+            background-color: transparent
+            top: 88px
+            margin-left: -16px
+            cursor: pointer
+            border-radius: 100%
+            &::before
+                content: ''
+                width: 15px
+                height: 2px
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%) rotate(45deg)
+                background-color: #222
+            &::after
+                content: ''
+                width: 15px
+                height: 2px
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translateX(-50%) rotate(135deg)
+                background-color: #222
+        .main-menu_list
+            +column()
+            text-align: center
+            margin-top: 90px
+            a
+                list-style: none
+                font-size: 32px
+                font-family: $ClotherBold
+                color: $color-menu_item
+                transition: all .1s ease
+                line-height: 1
+                padding-bottom: 30px
+                &:hover
+                    color: $accent
+            button
+                font-family: $SFProDisplayRegular
+                font-size: 14px
+                color: $color-parag
+                border: none
+                background-color: transparent
+                padding: 15px
+    .header
+        +row(between)
+        align-items: center
+        margin-bottom: 50px
+        .menu_btn
+            +col(3)
+            display: flex
+            justify-content: flex-start
+            button
+                background-color: transparent
+                border: none
+                padding: 10px
+                margin-left: -10px
+                i
+                    font-size: 18px
+                    color: #222
+        .logo
+            +col(6)
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                width: 310px
+                margin-bottom: 10px
+            p
+                font-size: 14px
+                text-align: center
+        .localization
+            +col(3)
+            display: flex
+            justify-content: flex-end
+            button
+                font-family: $SFProDisplayRegular
+                font-size: 14px
+                color: $color-parag
+                border: none
+                background-color: transparent
+                padding: 10px
+                margin-right: -10px
+                white-space: nowrap
+    h1
+        margin-bottom: 30px
+    .main-banner_img
+        +row(center)
+        .main-banner_img-item
+            +col(4)
+            display: flex
+            flex-direction: column
+            align-items: center
+            .iphone-left
+                margin-right: 100px
+            .main-banner_phone
+                position: relative
+                .main-banner_phone-gif
+                    width: 204px
+                    top: 80px
+                    left: 89px
+                    position: absolute
+            .main-banner_img-item_info
+                display: flex
+                justify-content: center
+                p
+                    font-size: 18px
+                    font-family: $ClotherBold
+                    margin-left: 10px
+                .cross
+                    color: #ff6159
+                .arrow
+                    color: #29cb42
+            .without_filter
+                margin-left: -56px
+            .with_filter
+                margin-right: -36px
+    .main-banner_btn
+        +row(center)
+        margin: 50px 0 40px
+.why-is-this
+    .why-is-this_items
+        +row(between)
+        margin-top: 60px
+        .why-is-this_item
+            +col(3)
+            display: flex
+            flex-direction: column
+            align-items: center
+            img
+                min-width: 100px
+                max-width: 100px
+            p
+                text-align: center
+                margin-top: 20px
+    .decision-pointer
+        +column()
+        margin-top: 20px
+        h5
+            +col(12)
+            text-align: center
+        .decision-pointer_lines
+            .svg-center
+                margin: 0 20px
+            .svg-right
+                transform: scale(-1, 1) 
+    .why-is-this_btn
+        +row(center)
+        margin-top: 20px
+.features
+    .features_list
+        +row(between)
+        margin-top: 60px
+        .features_item
+            +col(4)
+            display: flex
+            justify-content: space-between
+            margin-bottom: 50px
+            img
+                min-width: 60px
+                max-width: 60px
+                height: 50px
+                margin-right: 20px
+    .features_sub-title
+        +row(center)
+        margin-top: 50px
+        h4
+            +col(6)
+    .features_pointer
+        +row(center)
+        margin-top: 80px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        p
+            color: $accent
+            font-size: 14px
+            margin-bottom: 10px
+.how-it-work
+    padding-bottom: 0
+    .how-it-work_sub-title
+        +row(center)
+        margin: 40px 0
+        h4
+            +col(7)
+    .how-it-work_items
+        +row(between)
+        position: relative
+        .how-it-work_item
+            box-sizing: border-box
+            img
+                min-width: 46px
+                max-width: 46px
+            .how-it-work_item-text
+                h5
+                    margin-bottom: 10px
+            .phone_blue
+                min-width: 100%
+            .how-it-work_line
+                min-width: initial
+                max-width: initial
+            .how-it-work_android
+                width: 90px
+                height: 90px
+                border-radius: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                background-color: $accent
+                img
+                    min-width: 60px
+                    max-width: 60px 
+        .how-it-work_item1
+            +col(12)
+            text-align: center
+            margin-bottom: 50px
+            p
+                padding: 0 35%
+        .how-it-work_item2
+            +col(4)
+            text-align: right
+            margin-top: 30px
+            padding-right: 20px
+        .how-it-work_item3
+            +col(4)
+            height: 250px
+            text-align: center
+            z-index: 2
+            display: flex
+            align-items: center
+            .how-it-work_item-svg
+                position: absolute
+                bottom: 30px
+                left: 50%
+                transform: translateX(-50%)
+                .phone_blue
+                    min-width: 320px
+                    max-width: 320px
+                    position: absolute
+                    bottom: 70px
+                    left: 50%
+                    transform: translateX(-50%)
+                    z-index: -1
+                .svg-left
+                    transform: scale(-1, 1)
+                    z-index: 5
+                    margin-right: 15px
+                .svg-center
+                    position: absolute
+                    left: 50%
+                    bottom: 10px
+                    transform: translateX(-50%)
+                    z-index: -2
+                .svg-right
+                    margin-left: 15px
+                    z-index: 5
+        .how-it-work_item4
+            +col(4)
+            margin-top: 30px
+            padding-left: 20px
+        .how-it-work_item6
+            +col(12)
+            +row(center)
+            margin-top: 70px
+            margin-bottom: -50px
+            z-index: 10
+.android-sensors
+    width: 100%
+    background-color: $accent
+    padding-top: 65px
+    padding-bottom: 25px
+    .android-sensors_bg
+        width: 100vw
+        height: 75%
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .android-sensors_svg
+            width: 100%
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            &:nth-child(2)
+                top: 50px
+            &:nth-child(3)
+                top: 100px
+    .android-sensors_sub-title
+        +row(center)
+        h4
+            +col(6)
+            color: $white
+    .android-sensors_img    
+        +row(center)
+        margin-top: 25px
+        position: relative
+        &::before
+            content: ''
+            width: 6px
+            height: 6px
+            background-color: #fff
+            position: absolute
+            top: 1px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 100%
+        &::after
+            content: ''
+            width: 6px
+            height: 6px
+            background-color: #fff
+            position: absolute
+            bottom: 8px
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 100%
+        img
+            height: 136px
+.rotation-vector
+    padding-top: 40px
+    .rotation-vector_sub-title
+        +row(center)
+        margin-bottom: 80px
+        h4
+            +col(8)
+    .rotation-vector_info
+        +row(center)
+        position: relative
+        .rotation-vector_item
+            +col(4)
+            position: relative
+            img
+                min-width: 46px
+                max-width: 46px
+            h5
+                margin-top: 10px
+            p
+                margin-top: 10px
+                line-height: 1.29
+            &:first-child
+                margin-right: 75px
+                text-align: right
+        .plus
+            position: absolute
+            top: 0
+            right: -35px
+            transform: translateX(-50%)
+        .equal
+            position: absolute
+            bottom: 0
+            left: -35px
+            transform: translateX(-50%)
+    .rotation-vector_item-logo
+        +row(center)
+        +col(12)
+        height: 330px
+        background-position: 50.5% 50%
+        background-repeat: no-repeat
+        margin-top: -50px
+        margin-bottom: -40px
+        position: relative
+        .pulse_anim
+            background-color: #fff
+            position: absolute
+            top: 52%
+            left: 50%
+            border-radius: 100%
+            z-index: 0
+            .pulse
+                width: 0
+                height: 0
+                background-color: $accent
+                position: relative
+                margin-top: 50%
+                margin-left: 50%
+                &::before, &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border: 1px solid $accent
+                    border-radius: 100%
+                    animation: pulse 4s linear infinite
+                &::after
+                    animation-delay: .7s
+            .pulse2
+                width: 0
+                height: 0
+                background-color: $accent
+                position: relative
+                margin-top: 50%
+                margin-left: 50%
+                &::before, &::after
+                    content: ''
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    border: 1px solid $accent
+                    border-radius: 100%
+                    animation: pulse 4s linear infinite
+                    animation-delay: 1.5s
+                &::after
+                    animation-delay: 2.2s
+            @keyframes pulse
+                0%
+                    width: 0
+                    height: 0
+                    opacity: 1
+                75%
+                    width: 320px
+                    height: 320px
+                    opacity: 0
+                100%
+                    opacity: 0
+        img
+            width: 310px
+            z-index: 2
+            margin-left: -2px
+    .and-if-briefly
+        +row(center)
+        .and-if-briefly_images
+            +col(12)
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            margin-top: 30px
+            .and-if-briefly_img-wrap1
+                display: flex
+                justify-content: space-between
+                margin-bottom: 30px
+            .and-if-briefly_img-wrap2
+                display: flex
+                justify-content: space-between
+            .and-if-briefly_img
+                position: relative
+                display: flex
+                img
+                    min-width: 46px
+                    max-width: 46px
+                    height: 46px
+                .location_pointer
+                    min-width: 30px
+                    max-width: 30px
+                .plus
+                    margin: 0 40px
+                .equal
+                    margin: 0 40px
+.filter-parameters
+    .filter-parameters_sub-title
+        +row(center)
+        margin-top: 40px
+        h4
+            +col(6)
+    .filter-parameters_list
+        +row(between)
+        margin-top: 40px
+        .filter-parameters_item
+            +col(2)
+            display: flex
+            flex-direction: column
+            align-items: center
+            p
+                text-align: center
+                margin-top: 22px
+    .several-operation
+        +column()
+        margin-top: 60px
+        .several-operation_sub-title
+            +col(5)
+        p
+            +col(6)
+            margin-top: 25px
+        img
+            +col(6)
+            margin-top: 25px
+        span
+            font-size: 12px
+            color: #8c8c8c
+            font-family: $SFProDisplayRegular
+            margin-top: 10px
+        .pic-1
+            width: 200px
+        .pic-2
+            width: 62px
+        .pic-3
+            width: 220px 
+        .pic-4
+            width: 360px
+        .pic-5
+            width: 110px
+        .last-p
+            margin-top: 60px
+    .filter-parameters_sub-title2
+        +row(center)
+        margin-top: 70px
+        h4
+            +col(7)
+.geohash
+    .geohash_content
+        +column()
+        p
+            +col(6)
+            a
+                font-size: 16px
+        h4
+            +col(6)
+        img
+            +col(6)
+        .geohash_gif
+            position: relative
+            .geohash_phone-gif
+                width: 207px
+                top: 81px
+                left: 50px
+                position: absolute
+        .geohash_slider-desc
+            +col(12)
+            font-size: 14px
+            text-align: center
+            line-height: 1.43
+        .geohash_slider-desc2
+            +col(6)
+            margin-top: 40px
+        .geohash_slider
+            width: 310px
+            height: 420px
+            margin: 40px 0
+            &::before
+                content: ''
+                background: url('../../img/geohash/notebook.png')
+                background-size: 450px
+                background-repeat: no-repeat
+                background-position: bottom
+                width: 480px
+                height: 420px
+                display: block
+                position: absolute
+                top: -17px
+                left: -27%
+                overflow: hidden
+            p
+                width: 100%
+                height: 100px
+                margin-top: -120px
+            .geohash_slide
+                width: 280px
+                height: 196px
+                background-size: cover
+                background-position: center
+                margin-top: 138px
+            .slick-arrow
+                background-color: transparent
+                border: none
+                position: absolute
+                top: 50%
+                i
+                    color: #eee
+                    font-size: 32px
+                    font-weight: light
+            .slick-prev
+                left: -100px
+            .slick-next
+                right: -100px
+            .slick-dots
+                display: flex
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                li
+                    margin: 0 10px
+                    overflow: hidden
+                    width: 6px
+                    height: 6px
+                    background-color: rgba(221, 221, 221, 0.5)
+                    border-radius: 100%
+                    button
+                        display: none
+                .slick-active
+                    background-color: #0155fc
+        .geohash_iphone
+            width: 340px
+            margin-left: -40px
+        .geohash_slider2
+            height: 250px
+            &::before
+                content: ''
+                top: -145px
+            .geohash_slide
+                margin-top: 10px
+            .slick-dots
+                display: none
+    .geohash_sub-title
+        +row(center)
+        margin-top: 40px
+        margin-bottom: 30px
+        h4
+            +col(8)
+    h4
+        margin-top: 60px
+        margin-bottom: 20px
+    .geohash_detail-blog
+        margin-top: 40px
+        display: flex
+        align-items: center
+        span
+            a
+                display: flex
+                align-items: center
+                img
+                    width: 30px
+                    margin-right: 10px
+.use-and-develop
+    .use-and-develop_info
+        +row(center)
+        margin-top: 30px
+        p
+            +col(5)
+            text-align: center
+            a
+                font-size: 16px
+    .use-and-develop_btn
+        +row(center)
+        margin-top: 80px
+        margin-bottom: 50px
+    .main_links
+        +row(center)
+.footer
+    padding-bottom: 75px
+    .footer_logo
+        +column()
+        margin-top: 40px
+        img
+            width: 90px
+            margin-bottom: 20px
+    .footer_text
+        +row(center)
+        margin-top: 40px
+        p
+            +col(6)
+            text-align: center
+            a
+                font-size: 16px
+                white-space: nowrap
+
+            img
+                width: 24px
+                margin-bottom: -6px
+    .footer_soc-icons
+        +row(center)
+        margin-top: 65px
+        a
+            padding: 20px
+            font-size: 20px
+            .fa-github
+                color: #272727
+            .fa-instagram
+                color: #ff00b6    
+            .fa-twitter
+                color: #29a1ff
+            .fa-medium-m
+                color: #272727
+            .fa-telegram-plane
+                color: #2a90ed
+            .fa-slideshare
+                color: #0057fd
+            .fa-youtube
+                color: #ff0000
+            .fa-facebook
+                color: #2965d0
+.copy-right
+    height: 80px
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0
+    &::before
+        content: ''
+        display: none
+    p
+        color: $white
+        font-size: 14px
+///////////////////////////END custom style//////////////////
+
+@import "../media" // Always at the end

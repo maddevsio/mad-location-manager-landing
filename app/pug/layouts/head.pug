@@ -1,0 +1,27 @@
+mixin head(data)
+    meta(charset="UTF-8")
+    title= data.title
+
+    meta(content=data.author name="author")
+    meta(content=data.description name="description")
+
+    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    //- Template Basic Images Start
+    meta(property="og:image" content="path/to/image.jpg")
+    link(rel="shortcut icon" sizes="12x15" href="img/favicon/favicon.ico" type="image/x-icon")
+    link(rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png")
+    link(rel="apple-touch-icon" sizes="70x80" href="img/favicon/apple-touch-icon-78x78.png")
+
+    //- Chrome, Firefox OS and Opera  
+    meta(name="theme-color" content="#000")
+    //- Windows Phone  
+    meta(name="msapplication-navbutton-color" content="#000")
+    //- iOS Safari  
+    meta(name="apple-mobile-web-app-status-bar-style" content="#000")
+    //- Custom Browsers Color End
+
+    link(rel="stylesheet" href="css/libs.min.css")
+    link(rel="stylesheet" href="css/base.min.css")
+    //---------Change the file with the styles for the corresponding-------\\  
+    link(rel="stylesheet" href="css/styles/"+ data.style +".css")

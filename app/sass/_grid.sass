@@ -1,0 +1,52 @@
+$xxs: "(min-width: 320px)"
+$xs: "(min-width: 480px)"
+$sm: "(min-width: 576px)"
+$_sm: "(min-width: 768px)"
+$md: "(min-width: 992px)"
+$_md: "(min-width: 1024px)"
+$lg: "(min-width: 1200px)"
+$xlg: "(min-width: 1440px)"
+
+$cols: 12
+$gutter: 30px
+
+%container
+  margin: 0 auto
+  box-sizing: border-box
+  display: flex
+  padding: 0 15px
+  @media #{$_sm}
+    width: 100%
+  @media #{$lg}
+    width: 980px
+  @media #{$xlg}
+    width: 1140px
+
+
+=container($align:space-between, $wrap:wrap)
+  @extend %container
+  justify-content: $align
+  flex-wrap: $wrap
+
+=row($position)
+  min-width: 100%
+  display: flex
+  flex-wrap: wrap
+  @if $position == center
+    justify-content: center
+  @else if $position == between
+    justify-content: space-between
+  @else if $position == around
+    justify-content: space-around
+  @else if $position == ''
+    justify-content: space-between
+
+=column()
+  min-width: 100%
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  align-items: center
+  
+=col($num)
+  width: calc( (((100% - (#{$gutter} * (#{$cols} - 1))) / #{$cols}) * #{$num}) + ( #{$gutter} * (#{$num} - 1)) )

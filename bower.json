@@ -1,0 +1,28 @@
+{
+  "name": "combine",
+  "description": "The starting template for site layout, using the sass and pug preprocessor",
+  "main": "index.js",
+  "authors": [
+    "Denisoed"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.1",
+    "font-awesome": "^4.7.0",
+    "normalize-css": "^8.0.0",
+    "components-font-awesome": "^5.0.6"
+  },
+  "dependencies": {
+    "slick-carousel": "^1.8.1",
+    "page-scroll-to-id": "^1.5.8"
+  }
+}
