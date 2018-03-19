@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Mad location manager</title>
+    <meta content="Mad Devs" name="author"/>
+    <meta content="Error filter GPS sensors" name="description"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta property="og:image" content="path/to/image.jpg"/>
+    <link rel="shortcut icon" sizes="12x15" href="img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="70x80" href="img/favicon/apple-touch-icon-78x78.png"/>
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <link rel="stylesheet" href="css/libs.min.css"/>
+    <link rel="stylesheet" href="css/base.min.css"/>
+    <link rel="stylesheet" href="css/styles/index.css"/>
+  </head>
+  <body>
+    <div id="preloader">
+      <script>
+        var preloader = document.getElementById("preloader");
+        
+        function fadeOutnojquery(el){
+          el.style.opacity = 1;
+          var interpreloader = setInterval(function(){
+            el.style.opacity = el.style.opacity - 0.05;
+        
+            if (el.style.opacity <=0.05){
+              clearInterval(interpreloader);
+              preloader.style.display = "none";
+            }
+          },16);
+        }
+        
+        window.onload = function(){
+          setTimeout(function(){
+            fadeOutnojquery(preloader);
+          },500);
+        };
+      </script>
+    </div>
+    <main>
+      <section class="main-banner" id="main-banner" style="background-image: url('img/main-banner/bg.png')">
+        <div class="main-menu">
+          <div class="container">
+            <div class="main-menu_btn-toggle"></div>
+            <div class="main-menu_list"><a class="lang_en lang" href="#main-banner" key="main-menu_item1"></a><a class="lang_en lang" href="#why-is-this" key="main-menu_item2"></a><a class="lang_en lang" href="#features" key="main-menu_item3"></a><a class="lang_en lang" href="#how-it-work" key="main-menu_item4"></a><a class="lang_en lang" href="#rotation-vector" key="main-menu_item5"></a><a class="lang_en lang" href="#footer" key="main-menu_item6"></a><a class="lang_en lang localization_btn" href="/ru" language="ru" key="main-menu_item7"></a></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="header">
+            <div class="menu_btn">
+              <button class="main-menu_btn-toggle"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="logo"><img src="img/logo.svg" alt="Logotype">
+              <p class="lang_en lang" key="logo_desc"></p>
+            </div>
+            <div class="localization"><a class="lang_en lang localization_btn" href="/ru" language="ru" key="lang-toggle"></a></div>
+          </div>
+          <h1 class="lang_en lang" key="main_title"></h1>
+          <div class="main-banner_img">
+            <div class="main-banner_img-item">
+              <div class="main-banner_img-item_info without_filter"><img src="img/main-banner/cross.svg" alt="">
+                <p class="lang_en lang cross" key="without_filter"></p>
+              </div>
+              <div class="main-banner_phone"><img class="iphone-left" src="img/main-banner/bigphone.png" alt="Without filter"><img class="main-banner_phone-gif" src="img/main-banner/history.jpg" alt="Without filter"></div>
+            </div>
+            <div class="main-banner_img-item">
+              <div class="main-banner_img-item_info with_filter"><img src="img/main-banner/arrow.svg" alt="">
+                <p class="lang_en lang arrow" key="with_filter"></p>
+              </div>
+              <div class="main-banner_phone"><img src="img/main-banner/bigphone.png" alt="With filter"><img class="main-banner_phone-gif" src="img/gif1.gif" alt="Without filter"></div>
+            </div>
+          </div>
+          <div class="main-banner_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
+          <div class="main_links"><span class="lang_en lang or" key="main-banner_or"></span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="docs"></span></a></div>
+        </div>
+      </section>
+      <section class="why-is-this" id="why-is-this">
+        <div class="container">
+          <h2 class="lang_en lang" key="why-is-this_title"></h2>
+          <div class="why-is-this_items">
+            <div class="why-is-this_item"><img src="img/why-is-this/taxi.svg" alt="Taxi">
+              <p class="lang_en lang" key="why-is-this_p1"></p>
+            </div>
+            <div class="why-is-this_item"><img src="img/why-is-this/delivery.svg" alt="Delivery">
+              <p class="lang_en lang" key="why-is-this_p2"></p>
+            </div>
+            <div class="why-is-this_item"><img src="img/why-is-this/ondemand.svg" alt="On demand">
+              <p class="lang_en lang" key="why-is-this_p3"></p>
+            </div>
+          </div>
+          <div class="decision-pointer">
+            <div class="decision-pointer_lines">
+              <svg class="svg-left" version="1.1" baseprofile="full" height="165" xmlns="http://www.w3.org/2000/svg">
+                <path class="decision-pointer_path" stroke="#0155fc" stroke-dasharray="3, 8" stroke-width="2" fill="none"></path>
+                <path class="svg-line decision-pointer_path" stroke="#fff" stroke-width="5" stroke-dasharray="0" fill="none"></path>
+              </svg>
+              <svg class="svg-center" version="1.1" baseprofile="full" width="3" height="165" xmlns="http://www.w3.org/2000/svg">
+                <path stroke="#0155fc" stroke-width="2" stroke-dasharray="3, 8" fill="none" d="M2,158 L2,0"></path>
+                <path class="svg-line" stroke="#fff" stroke-width="6" stroke-dasharray="0" fill="none" d="M2,158 L2,0"></path>
+              </svg>
+              <svg class="svg-right" version="1.1" baseprofile="full" height="165" xmlns="http://www.w3.org/2000/svg">
+                <path class="decision-pointer_path" stroke="#0155fc" stroke-dasharray="3, 8" stroke-width="2" fill="none"></path>
+                <path class="svg-line decision-pointer_path" stroke="#fff" stroke-width="5" stroke-dasharray="0" fill="none"></path>
+              </svg>
+            </div>
+            <h5 class="lang_en lang" key="why-is-this_subtitle"></h5>
+          </div>
+          <div class="why-is-this_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
+        </div>
+      </section>
+      <section class="features" id="features">
+        <div class="container">
+          <h2 class="lang_en lang" key="features_title"></h2>
+          <div class="features_list">
+            <div class="features_item"><img src="img/features/routeerrors.svg" alt="Route errors">
+              <p class="lang_en lang" key="features_p1"></p>
+            </div>
+            <div class="features_item"><img src="img/features/staticroute.svg" alt="Static route">
+              <p class="lang_en lang" key="features_p2"></p>
+            </div>
+            <div class="features_item"><img src="img/features/zigzagroute.svg" alt="Zigzag route">
+              <p class="lang_en lang" key="features_p3"></p>
+            </div>
+            <div class="features_item"><img src="img/features/smothroute.svg" alt="Smoth route">
+              <p class="lang_en lang" key="features_p4"></p>
+            </div>
+            <div class="features_item"><img src="img/features/noiseroute.svg" alt="Noise route">
+              <p class="lang_en lang" key="features_p5"></p>
+            </div>
+            <div class="features_item"><img src="img/features/nogps.svg" alt="No gps">
+              <p class="lang_en lang" key="features_p6"></p>
+            </div>
+          </div>
+          <div class="features_sub-title">
+            <h4 class="lang_en lang" key="features_subtitle"></h4>
+          </div>
+          <div class="features_pointer"><a href="#how-it-work">
+              <p class="lang_en lang" key="features_how_work"></p><img src="img/down.svg" alt="Bottom"></a></div>
+        </div>
+      </section>
+      <section class="how-it-work" id="how-it-work">
+        <div class="container">
+          <h2 class="lang_en lang" key="how-it-work_title"></h2>
+          <div class="how-it-work_sub-title">
+            <h4 class="lang_en lang" key="how-it-work_subtitle"></h4>
+          </div>
+          <div class="how-it-work_items">
+            <div class="how-it-work_item how-it-work_item1"><img src="img/how-it-work/magnetometer.svg" alt="Magnetometer">
+              <div class="how-it-work_item-text">
+                <h5 class="lang_en lang" key="how-it-work_item1_title"></h5>
+                <p class="lang_en lang" key="how-it-work_item1_desc"></p>
+              </div>
+            </div>
+            <div class="how-it-work_item how-it-work_item2"><img src="img/how-it-work/accelerometer.svg" alt="Accelerometer">
+              <div class="how-it-work_item-text">
+                <h5 class="lang_en lang" key="how-it-work_item2_title"></h5>
+                <p class="lang_en lang" key="how-it-work_item2_desc"></p>
+              </div>
+            </div>
+            <div class="how-it-work_item how-it-work_item3">
+              <div class="how-it-work_item-svg"><img class="phone_blue" src="img/how-it-work/phone_blue.png" alt="Phone blue">
+                <svg class="svg-left" version="1.1" baseprofile="full" width="160" height="310" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#0155fc" stroke-width="2" fill="none" stroke-dasharray="3, 8" d="m 10,310 c 0,0 1.09319,-22.6923 5.48767,-32.1421 4.72602,-10.1628 15.25207,-10.5878 17.63895,-10.5833 33.43935,0.063 44.43309,0.4908 76.92544,0.4899 5.83482,-2e-4 11.73587,-2.2667 14.50313,-5.4876 2.52372,-2.9375 3.82781,-9.017 3.82177,-12.2493 -0.12257,-65.6202 -0.37418,-132.16173 -0.39198,-200.6921 -8.2e-4,-3.14125 0.49039,-6.7099 2.25387,-9.30944 1.80417,-2.65952 4.19318,-5.34006 8.03553,-5.68367 7.37296,-0.65935 21.7661,0.49055 21.46072,-0.29398"></path>
+                  <path class="how-it-work_svg-line" stroke="#fff" stroke-width="4" stroke-dasharray="0" fill="none" d="m 10,310 c 0,0 1.09319,-22.6923 5.48767,-32.1421 4.72602,-10.1628 15.25207,-10.5878 17.63895,-10.5833 33.43935,0.063 44.43309,0.4908 76.92544,0.4899 5.83482,-2e-4 11.73587,-2.2667 14.50313,-5.4876 2.52372,-2.9375 3.82781,-9.017 3.82177,-12.2493 -0.12257,-65.6202 -0.37418,-132.16173 -0.39198,-200.6921 -8.2e-4,-3.14125 0.49039,-6.7099 2.25387,-9.30944 1.80417,-2.65952 4.19318,-5.34006 8.03553,-5.68367 7.37296,-0.65935 21.7661,0.49055 21.46072,-0.29398"></path>
+                </svg>
+                <svg class="svg-center" version="1.1" baseprofile="full" width="5" height="370" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#0155fc" stroke-width="2" stroke-dasharray="3, 8" fill="none" d="M3,370 L2,0"></path>
+                  <path class="how-it-work_svg-line" stroke="#fff" stroke-width="5" stroke-dasharray="0" fill="none" d="M3,370 L2,0"></path>
+                </svg>
+                <svg class="svg-right" version="1.1" baseprofile="full" width="160" height="310" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="#0155fc" stroke-width="2" fill="none" stroke-dasharray="3, 8" d="m 10,310 c 0,0 1.09319,-22.6923 5.48767,-32.1421 4.72602,-10.1628 15.25207,-10.5878 17.63895,-10.5833 33.43935,0.063 44.43309,0.4908 76.92544,0.4899 5.83482,-2e-4 11.73587,-2.2667 14.50313,-5.4876 2.52372,-2.9375 3.82781,-9.017 3.82177,-12.2493 -0.12257,-65.6202 -0.37418,-132.16173 -0.39198,-200.6921 -8.2e-4,-3.14125 0.49039,-6.7099 2.25387,-9.30944 1.80417,-2.65952 4.19318,-5.34006 8.03553,-5.68367 7.37296,-0.65935 21.7661,0.49055 21.46072,-0.29398"></path>
+                  <path class="how-it-work_svg-line" stroke="#fff" stroke-width="4" stroke-dasharray="0" fill="none" d="m 10,310 c 0,0 1.09319,-22.6923 5.48767,-32.1421 4.72602,-10.1628 15.25207,-10.5878 17.63895,-10.5833 33.43935,0.063 44.43309,0.4908 76.92544,0.4899 5.83482,-2e-4 11.73587,-2.2667 14.50313,-5.4876 2.52372,-2.9375 3.82781,-9.017 3.82177,-12.2493 -0.12257,-65.6202 -0.37418,-132.16173 -0.39198,-200.6921 -8.2e-4,-3.14125 0.49039,-6.7099 2.25387,-9.30944 1.80417,-2.65952 4.19318,-5.34006 8.03553,-5.68367 7.37296,-0.65935 21.7661,0.49055 21.46072,-0.29398"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="how-it-work_item how-it-work_item4"><img src="img/how-it-work/gyroscope.svg" alt="Gyroscope">
+              <div class="how-it-work_item-text">
+                <h5 class="lang_en lang" key="how-it-work_item3_title"></h5>
+                <p class="lang_en lang" key="how-it-work_item3_desc"></p>
+              </div>
+            </div>
+            <div class="how-it-work_item how-it-work_item6">
+              <div class="how-it-work_android"><img src="img/how-it-work/and-dat-white.svg" alt=""></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="android-sensors" id="android-sensors">
+        <div class="android-sensors_bg">
+          <svg class="android-sensors_svg svg-left" version="1.1" baseprofile="full" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <path class="android-path_bg1 svg-line" stroke="#fff" stroke-width="1" fill="none" d="M0,240.35201 C44.3823529,240.35201 44.3823529,2 88.7647059,2 C133.147059,2 133.147059,240.35201 177.529412,240.35201 C221.911765,240.35201 221.911765,2 266.294118,2 C310.676471,2 310.676471,240.35201 355.058824,240.35201 C399.441176,240.35201 399.441176,2 443.823529,2 C488.205882,2 488.205882,240.35201 532.588235,240.35201 C576.970588,240.35201 576.970588,2 621.352941,2 C665.735294,2 665.735294,240.35201 710.117647,240.35201 C754.5,240.35201 754.5,2 798.882353,2 C843.264706,2 843.264706,240.35201 887.647059,240.35201 C932.029412,240.35201 932.029412,2 976.411765,2 C1020.79412,2 1020.79412,240.35201 1065.17647,240.35201 C1109.55882,240.35201 1109.55882,2 1153.94118,2 C1198.32353,2 1198.32353,240.35201 1242.70588,240.35201 C1287.08824,240.35201 1287.08824,2 1331.47059,2 C1375.85294,2 1375.85294,240.35201 1420.23529,240.35201 C1464.61765,240.35201 1464.61765,2 1509,2 C1553.38235,2 1553.38235,240.35201 1597.76471,240.35201 C1642.14706,240.35201 1642.14706,2 1686.52941,2 C1730.91176,2 1730.91176,240.35201 1775.29412,240.35201 C1819.67647,240.35201 1819.67647,2 1864.05882,2 C1908.44118,2 1908.44118,240.35201 1952.82353,240.35201 C1997.20588,240.35201 1997.20588,2 2041.58824,2 C2085.97059,2 2085.97059,240.35201 2130.35294,240.35201 C2174.73529,240.35201 2174.73529,2 2219.11765,2 C2263.5,2 2263.5,240.35201 2307.88235,240.35201 C2352.26471,240.35201 2352.26471,2 2396.64706,2 C2441.02941,2 2441.02941,240.35201 2485.41176,240.35201 C2529.79412,240.35201 2529.79412,2 2574.17647,2 C2618.55882,2 2618.55882,240.35201 2662.94118,240.35201 C2707.32353,240.35201 2707.32353,2 2751.70588,2 C2796.08824,2 2796.08824,240.35201 2840.47059,240.35201 C2884.85294,240.35201 2884.85294,2 2929.23529,2 C2973.08824,2 2973.08824,240.35201 3017.47059,240.35201"></path>
+          </svg>
+          <svg class="android-sensors_svg svg-left" version="1.1" baseprofile="full" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <path class="android-path_bg2 svg-line" stroke="#fff" stroke-width="1" fill="none" d="M0,157.823786 C22.1901204,157.823786 22.1901204,1 44.3802408,1 C66.5703612,1 66.5703612,157.823786 88.7604816,157.823786 C110.950602,157.823786 110.950602,1 133.140722,1 C155.330843,1 155.330843,157.823786 177.520963,157.823786 C199.711084,157.823786 199.711084,1 221.901204,1 C244.091324,1 244.091324,157.823786 266.281445,157.823786 C288.471565,157.823786 288.471565,1 310.661686,1 C332.851806,1 332.851806,157.823786 355.041926,157.823786 C377.232047,157.823786 377.232047,1 399.422167,1 C421.612288,1 421.612288,157.823786 443.802408,157.823786 C465.992528,157.823786 465.992528,1 488.182649,1 C510.372769,1 510.372769,157.823786 532.56289,157.823786 C554.75301,157.823786 554.75301,1 576.94313,1 C599.133251,1 599.133251,157.823786 621.323371,157.823786 C643.513492,157.823786 643.513492,1 665.703612,1 C687.893732,1 687.893732,157.823786 710.083853,157.823786 C732.273973,157.823786 732.273973,1 754.464094,1 C776.654214,1 776.654214,157.823786 798.844334,157.823786 C821.034455,157.823786 821.034455,1 843.224575,1 C865.414696,1 865.414696,157.823786 887.604816,157.823786 C909.794936,157.823786 909.794936,1 931.985057,1 C954.175177,1 954.175177,157.823786 976.365298,157.823786 C998.555418,157.823786 998.555418,1 1020.74554,1 C1042.93566,1 1042.93566,157.823786 1065.12578,157.823786 C1087.3159,157.823786 1087.3159,1 1109.50602,1 C1131.69614,1 1131.69614,157.823786 1153.88626,157.823786 C1176.07638,157.823786 1176.07638,1 1198.2665,1 C1220.45662,1 1220.45662,157.823786 1242.64674,157.823786 C1264.83686,157.823786 1264.83686,1 1287.02698,1 C1309.2171,1 1309.2171,157.823786 1331.40722,157.823786 C1353.59734,157.823786 1353.59734,1 1375.78746,1 C1397.97759,1 1397.97759,157.823786 1420.16771,157.823786 C1442.35783,157.823786 1442.35783,1 1464.54795,1 C1486.73807,1 1486.73807,157.823786 1508.92819,157.823786 C1531.26193,157.823786 1531.26193,1 1553.45205,1 C1575.64217,1 1575.64217,157.823786 1597.83229,157.823786 C1620.02241,157.823786 1620.02241,1 1642.21254,1 C1664.40266,1 1664.40266,157.823786 1686.59278,157.823786 C1708.7829,157.823786 1708.7829,1 1730.97302,1 C1753.16314,1 1753.16314,157.823786 1775.35326,157.823786 C1797.54338,157.823786 1797.54338,1 1819.7335,1 C1841.92362,1 1841.92362,157.823786 1864.11374,157.823786 C1886.30386,157.823786 1886.30386,1 1908.49398,1 C1930.6841,1 1930.6841,157.823786 1952.87422,157.823786 C1975.06434,157.823786 1975.06434,1 1997.25446,1 C2019.44458,1 2019.44458,157.823786 2041.6347,157.823786 C2063.82482,157.823786 2063.82482,1 2086.01494,1 C2108.20506,1 2108.20506,157.823786 2130.39518,157.823786 C2152.5853,157.823786 2152.5853,1 2174.77542,1 C2196.96555,1 2196.96555,157.823786 2219.15567,157.823786 C2241.34579,157.823786 2241.34579,1 2263.53591,1 C2285.72603,1 2285.72603,157.823786 2307.91615,157.823786 C2330.10627,157.823786 2330.10627,1 2352.29639,1 C2374.48651,1 2374.48651,157.823786 2396.67663,157.823786 C2418.86675,157.823786 2418.86675,1 2441.05687,1 C2463.24699,1 2463.24699,157.823786 2485.43711,157.823786 C2507.62723,157.823786 2507.62723,1 2529.81735,1 C2552.00747,1 2552.00747,157.823786 2574.19759,157.823786 C2596.38771,157.823786 2596.38771,1 2618.57783,1 C2640.76795,1 2640.76795,157.823786 2662.95807,157.823786 C2685.14819,157.823786 2685.14819,1 2707.33831,1 C2729.52843,1 2729.52843,157.823786 2751.71856,157.823786 C2773.90868,157.823786 2773.90868,1 2796.0988,1 C2818.28892,1 2818.28892,157.823786 2840.47904,157.823786 C2862.66916,157.823786 2862.66916,1 2884.85928,1 C2907.0494,1 2907.0494,157.823786 2929.23952,157.823786 C2951.42964,157.823786 2951.42964,1 2973.61976,1 C2995.80988,1 2995.80988,157.823786 3018,157.823786"></path>
+          </svg>
+          <svg class="android-sensors_svg svg-left" version="1.1" baseprofile="full" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <path class="android-path_bg3 svg-line" stroke="#fff" stroke-width="1" fill="none" d="M0.955696203,0.911893018 C12.7843484,45.5785597 24.6130006,67.911893 36.4416527,67.911893 C54.184631,67.911893 54.184631,0.911893018 71.9276093,0.911893018 C89.6705876,0.911893018 89.6705876,67.911893 107.413566,67.911893 C125.156544,67.911893 125.156544,0.911893018 142.899522,0.911893018 C160.642501,0.911893018 160.642501,67.911893 178.385479,67.911893 C196.128457,67.911893 196.128457,0.911893018 213.871435,0.911893018 C231.614414,0.911893018 231.614414,67.911893 249.357392,67.911893 C267.10037,67.911893 267.10037,0.911893018 284.843349,0.911893018 C302.586327,0.911893018 302.586327,67.911893 320.329305,67.911893 C338.072283,67.911893 338.072283,0.911893018 355.815262,0.911893018 C373.55824,0.911893018 373.55824,67.911893 391.301218,67.911893 C409.044196,67.911893 409.044196,0.911893018 426.787175,0.911893018 C444.530153,0.911893018 444.530153,67.911893 462.273131,67.911893 C480.01611,67.911893 480.01611,0.911893018 497.759088,0.911893018 C515.502066,0.911893018 515.502066,67.911893 533.245044,67.911893 C550.988023,67.911893 550.988023,0.911893018 568.731001,0.911893018 C586.473979,0.911893018 586.473979,67.911893 604.216958,67.911893 C621.959936,67.911893 621.959936,0.911893018 639.702914,0.911893018 C657.445892,0.911893018 657.445892,67.911893 675.188871,67.911893 C692.931849,67.911893 692.931849,0.911893018 710.674827,0.911893018 C728.417805,0.911893018 728.417805,67.911893 746.160784,67.911893 C763.903762,67.911893 763.903762,0.911893018 781.64674,0.911893018 C799.389719,0.911893018 799.389719,67.911893 817.132697,67.911893 C834.875675,67.911893 834.875675,0.911893018 852.618653,0.911893018 C870.361632,0.911893018 870.361632,67.911893 888.10461,67.911893 C905.847588,67.911893 905.847588,0.911893018 923.590566,0.911893018 C941.333545,0.911893018 941.333545,67.911893 959.076523,67.911893 C976.819501,67.911893 976.819501,0.911893018 994.56248,0.911893018 C1012.30546,0.911893018 1012.30546,67.911893 1030.04844,67.911893 C1047.79141,67.911893 1047.79141,0.911893018 1065.53439,0.911893018 C1083.27737,0.911893018 1083.27737,67.911893 1101.02035,67.911893 C1118.76333,67.911893 1118.76333,0.911893018 1136.50631,0.911893018 C1154.24928,0.911893018 1154.24928,67.911893 1171.99226,67.911893 C1189.73524,67.911893 1189.73524,0.911893018 1207.47822,0.911893018 C1225.2212,0.911893018 1225.2212,67.911893 1242.96418,67.911893 C1260.70715,67.911893 1260.70715,0.911893018 1278.45013,0.911893018 C1296.19311,0.911893018 1296.19311,67.911893 1313.93609,67.911893 C1331.67907,67.911893 1331.67907,0.911893018 1349.42204,0.911893018 C1367.16502,0.911893018 1367.16502,67.911893 1384.908,67.911893 C1402.65098,67.911893 1402.65098,0.911893018 1420.39396,0.911893018 C1438.13694,0.911893018 1438.13694,67.911893 1455.87991,67.911893 C1473.62289,67.911893 1473.62289,0.911893018 1491.36587,0.911893018 C1508.46306,1 1508.90745,67.911893 1527.20508,68 C1545.5027,68.088107 1544.97956,1 1562.72253,1 C1580.46551,1 1580.46551,68 1598.20849,68 C1615.95147,68 1615.95147,1 1633.69445,1 C1651.43743,1 1651.43743,68 1669.1804,68 C1686.92338,68 1686.92338,1 1704.66636,1 C1722.40934,1 1722.40934,68 1740.15232,68 C1757.89529,68 1757.89529,1 1775.63827,1 C1793.38125,1 1793.38125,68 1811.12423,68 C1828.86721,68 1828.86721,1 1846.61019,1 C1864.35316,1 1864.35316,68 1882.09614,68 C1899.83912,68 1899.83912,1 1917.5821,1 C1935.32508,1 1935.32508,68 1953.06806,68 C1970.81103,68 1970.81103,1 1988.55401,1 C2006.29699,1 2006.29699,68 2024.03997,68 C2041.78295,68 2041.78295,1 2059.52593,1 C2077.2689,1 2077.2689,68 2095.01188,68 C2112.75486,68 2112.75486,1 2130.49784,1 C2148.24082,1 2148.24082,68 2165.9838,68 C2183.72677,68 2183.72677,1 2201.46975,1 C2219.21273,1 2219.21273,68 2236.95571,68 C2254.69869,68 2254.69869,1 2272.44166,1 C2290.18464,1 2290.18464,68 2307.92762,68 C2325.6706,68 2325.6706,1 2343.41358,1 C2361.15656,1 2361.15656,68 2378.89953,68 C2396.64251,68 2396.64251,1 2414.38549,1 C2432.12847,1 2432.12847,68 2449.87145,68 C2467.61443,68 2467.61443,1 2485.3574,1 C2503.10038,1 2503.10038,68 2520.84336,68 C2538.58634,68 2538.58634,1 2556.32932,1 C2574.0723,1 2574.0723,68 2591.81527,68 C2609.55825,68 2609.55825,1 2627.30123,1 C2645.04421,1 2645.04421,68 2662.78719,68 C2680.53017,68 2680.53017,1 2698.27314,1 C2716.01612,1 2716.01612,68 2733.7591,68 C2751.50208,68 2751.50208,1 2769.24506,1 C2786.98803,1 2786.98803,68 2804.73101,68 C2822.47399,68 2822.47399,1 2840.21697,1 C2857.95995,1 2857.95995,68 2875.70293,68 C2893.4459,68 2893.4459,1 2911.18888,1 C2928.93186,1 2928.93186,68 2946.67484,68 C2964.41782,68 2964.41782,1 2982.1608,1 C2999.25799,1.08810698 3006.17135,68.088107 3018,68.088107"></path>
+          </svg>
+        </div>
+        <div class="container">
+          <div class="android-sensors_sub-title">
+            <h4 class="lang_en lang" key="android-sensors_title"></h4>
+          </div>
+          <div class="android-sensors_img">
+            <svg class="svg-center" version="1.1" baseprofile="full" width="6" height="165" xmlns="http://www.w3.org/2000/svg">
+              <path class="android-sensors_path android-sensors_svg-line" stroke="#fff" stroke-width="2" stroke-dasharray="0" fill="none" d="M3,0 L3,160"></path>
+              <path class="android-sensors_path" stroke="#0155fc" stroke-width="3" stroke-dasharray="8, 3" fill="none" d="M3,0 L3,160"></path>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="rotation-vector" id="rotation-vector">
+        <div class="container">
+          <div class="rotation-vector_sub-title">
+            <h4 class="lang_en lang" key="rotation_vector_title"></h4>
+          </div>
+          <div class="rotation-vector_info">
+            <div class="rotation-vector_item">
+              <div class="plus"></div><img src="img/rotation-vector/and-dat.svg" alt="And dat">
+              <h5 class="lang_en lang" key="rotation_vector_item1_title"></h5>
+              <p class="lang_en lang" key="rotation_vector_item1_desc"></p>
+            </div>
+            <div class="rotation-vector_item">
+              <div class="equal"></div><img src="img/rotation-vector/kalman.svg" alt="Kalman">
+              <h5 class="lang_en lang" key="rotation_vector_item2_title"></h5>
+              <p class="lang_en lang" key="rotation_vector_item2_desc"></p>
+            </div>
+          </div>
+          <div class="rotation-vector_item-logo">
+            <div class="pulse_anim">
+              <div class="pulse"></div>
+              <div class="pulse2"></div>
+            </div><img src="img/logo.svg" alt="Logotype">
+          </div>
+          <div class="and-if-briefly">
+            <h4 class="lang_en lang" key="rotation_vector_simple"></h4>
+            <div class="and-if-briefly_images">
+              <div class="and-if-briefly_img-wrap1">
+                <div class="and-if-briefly_img"><img src="img/rotation-vector/accelerometer.svg" alt="Accelerometer">
+                  <div class="plus"></div>
+                </div>
+                <div class="and-if-briefly_img"><img src="img/rotation-vector/gyroscope.svg" alt="Gyroscope">
+                  <div class="plus"></div>
+                </div>
+                <div class="and-if-briefly_img and-if-briefly_img3"><img src="img/rotation-vector/magnetometer.svg" alt="Magnetometer">
+                  <div class="equal"></div>
+                </div>
+              </div>
+              <div class="and-if-briefly_img-wrap2">
+                <div class="and-if-briefly_img"><img src="img/rotation-vector/and-dat.svg" alt="And dat">
+                  <div class="plus"></div>
+                </div>
+                <div class="and-if-briefly_img"><img src="img/rotation-vector/kalman.svg" alt="Kalman">
+                  <div class="equal"></div>
+                </div>
+                <div class="and-if-briefly_img"><img class="location_pointer" src="img/rotation-vector/pin.svg" alt="Kalman"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="filter-parameters">
+        <div class="container">
+          <h2 class="lang_en lang" key="filter-parameters_title"></h2>
+          <div class="filter-parameters_sub-title">
+            <h4 class="lang_en lang" key="filter-parameters_subtitle1"></h4>
+          </div>
+          <div class="filter-parameters_list">
+            <div class="filter-parameters_item"><img src="img/filter-parameters/1.svg" alt="">
+              <p class="lang_en lang" key="filter-parameters_item1"></p>
+            </div>
+            <div class="filter-parameters_item"><img src="img/filter-parameters/2.svg" alt="">
+              <p class="lang_en lang" key="filter-parameters_item2"></p>
+            </div>
+            <div class="filter-parameters_item"><img src="img/filter-parameters/3.svg" alt="">
+              <p class="lang_en lang" key="filter-parameters_item3"></p>
+            </div>
+            <div class="filter-parameters_item"><img src="img/filter-parameters/4.svg" alt="">
+              <p class="lang_en lang" key="filter-parameters_item4"></p>
+            </div>
+            <div class="filter-parameters_item"><img src="img/filter-parameters/5.svg" alt="">
+              <p class="lang_en lang" key="filter-parameters_item5"></p>
+            </div>
+          </div>
+          <div class="several-operation">
+            <div class="several-operation_sub-title">
+              <h4 class="lang_en lang" key="several-operation_title"></h4>
+            </div>
+            <p class="lang_en lang" key="several-operation_desc"></p><img class="pic-1" src="img/filter-parameters/6.svg" alt=""><span class="lang_en lang" key="several-operation_pic1"></span>
+            <p class="lang_en lang" key="several-operation_p1"></p><img class="pic-2" src="img/filter-parameters/7.svg" alt=""><span class="lang_en lang" key="several-operation_pic2"></span>
+            <p class="lang_en lang" key="several-operation_p2"></p><img class="pic-3" src="img/filter-parameters/8.svg" alt=""><span class="lang_en lang" key="several-operation_pic3"></span>
+            <p class="lang_en lang" key="several-operation_p3"></p><img class="pic-4" src="img/filter-parameters/9.svg" alt=""><img class="pic-5" src="img/filter-parameters/10.svg" alt=""><span class="lang_en lang" key="several-operation_pic4"></span>
+            <p class="last-p lang_en lang" key="several-operation_p4"></p>
+          </div>
+          <div class="filter-parameters_sub-title2">
+            <h4 class="lang_en lang" key="filter-parameters_subtitle2"></h4>
+          </div>
+        </div>
+      </section>
+      <section class="geohash">
+        <div class="container">
+          <h2 class="lang_en lang" key="geohash_title"></h2>
+          <div class="geohash_content">
+            <div class="geohash_sub-title">
+              <h4 class="lang_en lang" key="geohash_subtitle"></h4>
+            </div>
+            <p class="lang_en lang" key="geohash_p1"></p>
+            <h4 class="lang_en lang" key="geohash_subtitle2"></h4>
+            <p class="lang_en lang" key="geohash_p2"></p>
+            <div class="geohash_slider">
+              <div class="geohash_slide" style="background-image: url('img/geohash/1.png')">
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3"></p>
+              </div>
+              <div class="geohash_slide" style="background-image: url('img/geohash/2.png')">
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.2"></p>
+              </div>
+              <div class="geohash_slide" style="background-image: url('img/geohash/3.png')">
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.3"></p>
+              </div>
+            </div>
+            <p class="lang_en lang" key="geohash_p4"></p>
+            <h4 class="lang_en lang" key="geohash_subtitle3"></h4>
+            <p class="lang_en lang" key="geohash_p5"></p>
+            <p class="lang_en lang geohash_slider-desc geohash_slider-desc2" key="geohash_p6"></p>
+            <div class="geohash_slider geohash_slider2">
+              <div class="geohash_slide" style="background-image: url('img/geohash/4.png')"></div>
+            </div>
+            <p class="lang_en lang" key="geohash_p7"></p>
+            <div class="geohash_gif"><img class="geohash_iphone" src="img/geohash/bigphone.png" alt=""><img class="geohash_phone-gif" src="img/gif1.gif" alt="Without filter"></div>
+            <p class="lang_en lang" key="geohash_p8"></p>
+            <div class="geohash_detail-blog"><span class="lang_en lang" key="geohash_link"><a href="https://medium.com/@lezh1k.vohrer/b81f1026e06c" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"> Детали расчетов можно посмотреть в блоге</a></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="use-and-develop">
+        <div class="container">
+          <h2 class="lang_en lang" key="use_dev_title"></h2>
+          <div class="use-and-develop_info">
+            <p class="lang_en lang" key="use_dev_desc"></p>
+          </div>
+          <div class="use-and-develop_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
+          <div class="main_links"><span class="lang_en lang or" key="use_dev_or"></span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="use_dev_docs"></span></a></div>
+        </div>
+      </section>
+      <section class="footer" id="footer">
+        <div class="container">
+          <h2 class="lang_en lang" key="footer_title"></h2>
+          <div class="footer_logo"><img src="img/footer/mad-logo.svg" alt="Mad Devs"><a href="https://maddevs.io/" target="_blank">https://maddevs.io/</a></div>
+          <div class="footer_text">
+            <p class="lang_en lang" key="footer_desc"></p>
+          </div>
+          <div class="footer_soc-icons"><a href="https://github.com/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-github"></i></a><a href="https://www.instagram.com/maddevsio/" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a><a href="https://twitter.com/MadDevsIO" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a><a href="https://blog.maddevs.io/" target="_blank" rel="nofollow"><i class="fab fa-medium-m"></i></a><a href="https://t.me/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-telegram-plane"></i></a><a href="https://www.slideshare.net/maddevs/presentations" target="_blank" rel="nofollow"><i class="fab fa-slideshare"></i></a><a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a><a href="https://www.facebook.com/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i></a></div>
+        </div>
+      </section>
+    </main>
+    <section class="copy-right">
+      <p>© Mad Devs, <span id="copyright_years"></span></p>
+    </section>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83208754-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-83208754-6');
+    </script>
+    <script>
+      var scr = {"scripts":[
+        {"src" : "js/libs.min.js", "async" : false},
+        {"src" : "js/script.min.js", "async" : false}
+      ]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+    </script>
+  </body>
+</html>

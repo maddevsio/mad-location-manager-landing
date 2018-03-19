@@ -32,13 +32,13 @@ gulp.task('build', ['removedist', 'buildhtml', 'imagemin', 'sass', 'libs'], func
 		'app/js/*.js'
 	]).pipe(gulp.dest('dist/js'));
 
-	var buildAudio = gulp.src([
-		'app/audio/**/*'
-	]).pipe(gulp.dest('dist/audio'));
+	var buildJson = gulp.src([
+		'app/js/lang.json'
+	]).pipe(gulp.dest('dist/js'));
 
-	var buildVideo = gulp.src([
-		'app/video/**/*'
-	]).pipe(gulp.dest('dist/video'));
+	var buildWebfonts = gulp.src([
+		'app/webfonts/**/*'
+	]).pipe(gulp.dest('dist/webfonts'));
 
 });
 

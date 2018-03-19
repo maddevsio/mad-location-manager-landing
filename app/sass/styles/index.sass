@@ -142,6 +142,8 @@ section
         background-color: #222
 .scroll_off
     overflow: hidden
+
+// For animation svg
 .dashoffset
     stroke-dashoffset: 500 !important
 .dashoffset-android-sensors
@@ -149,7 +151,7 @@ section
 .path
   stroke-dasharray: 500
   stroke-dashoffset: 500
-  animation: dash 2.5s cubic-bezier(0.645, 0.045, 0.355, 1)
+  animation: dash 2s cubic-bezier(0.645, 0.045, 0.355, 1)
 @keyframes dash
   from
     stroke-dashoffset: 0
@@ -209,6 +211,19 @@ section
   100%
     stroke-dashoffset: 0
     opacity: 0
+
+#preloader
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 99999
+    background-color: $accent
+    display: flex
+    justify-content: center
+    align-items: center
+    overflow: hidden
 /////////////////////////Custom Style//////////////////////
 .main-banner
     padding-top: 40px
@@ -270,7 +285,7 @@ section
                 padding-bottom: 30px
                 &:hover
                     color: $accent
-            button
+            .localization_btn, button
                 font-family: $SFProDisplayRegular
                 font-size: 14px
                 color: $color-parag
@@ -308,7 +323,7 @@ section
             +col(3)
             display: flex
             justify-content: flex-end
-            button
+            a, button
                 font-family: $SFProDisplayRegular
                 font-size: 14px
                 color: $color-parag
@@ -502,6 +517,7 @@ section
             z-index: 10
 .android-sensors
     width: 100%
+    min-height: 250px
     background-color: $accent
     padding-top: 65px
     padding-bottom: 25px
@@ -916,7 +932,7 @@ section
     &::before
         content: ''
         display: none
-    p
+    p, span
         color: $white
         font-size: 14px
 ///////////////////////////END custom style//////////////////
