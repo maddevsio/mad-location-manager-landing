@@ -13,20 +13,30 @@ gulp.task('sass', ["styles"], function() {
 	return gulp.src('app/sass/*.sass')
 		.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
 		.pipe(rename({suffix: '.min', prefix : ''}))
-		.pipe(autoprefixer(['last 15 versions']))
+		.pipe(autoprefixer(['last 5 versions']))
 		.pipe(cleanCSS()) // Comment out when debugging
 		.pipe(gulp.dest('app/css'))
 		.pipe(browserSync.reload({stream: true}));
 });
 
-
 gulp.task('styles', function() {
 	return gulp.src('app/sass/styles/*.sass')
 		.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
-		.pipe(autoprefixer(['last 15 versions']))
+		.pipe(rename({suffix: '.min', prefix : ''}))
+		.pipe(autoprefixer(['last 5 versions']))
 		.pipe(cleanCSS())
 		.pipe(bless())
-		.pipe(cssbeautify())
 		.pipe(gulp.dest('app/css/styles'))
+		.pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('header', function() {
+	return gulp.src('app/sass/header.sass')
+		.pipe(sass({outputStyle: 'expand'}).on("error", notify.onError()))
+		.pipe(rename({suffix: '.min', prefix : ''}))
+		.pipe(autoprefixer(['last 5 versions']))
+		.pipe(cleanCSS())
+		.pipe(bless())
+		.pipe(gulp.dest('app/css/'))
 		.pipe(browserSync.reload({stream: true}))
 });

@@ -6,14 +6,11 @@ html(lang="en")
       +head({
         "title": "Mad location manager",
 				"author": "MadDevs",
-				"description": "Error filter GPS sensors",
-				"style": "index"
+				"description": "Error filter GPS sensors"
       })
   body
     //- ///////////////////////Code////////////////////////
-    #preloader
     script.
-      var preloader = document.getElementById("preloader");
       var userLang = navigator.language || navigator.userLanguage;
       
       if (userLang == 'ru') {
@@ -21,22 +18,4 @@ html(lang="en")
       } else {
         window.location.href = window.location.href + "en";
       }
-
-      function fadeOutnojquery(el){
-        el.style.opacity = 1;
-        var interpreloader = setInterval(function(){
-          el.style.opacity = el.style.opacity - 0.05;
-
-          if (el.style.opacity <=0.05){
-            clearInterval(interpreloader);
-            preloader.style.display = "none";
-          }
-        },16);
-      }
-      
-      window.onload = function(){
-        setTimeout(function(){
-          fadeOutnojquery(preloader);
-        },500);
-      };
     //- //////////////////// End Code /////////////////////

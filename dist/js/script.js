@@ -144,35 +144,6 @@ $(document).ready(function () {
   })();
   
   // Translate all text on page
-  (function Translate() {
-    let arrLang = '';
-
-    $.getJSON('./js/lang.json', function (data) {
-      var userLang = navigator.language || navigator.userLanguage;
-      arrLang = data;
-      
-      // if (userLang == 'ru') {
-      //   window.location.href = "http://www.test.com";
-      //   $('.lang').each(function (index, element) {
-      //     $(this).html(arrLang['ru'][$(this).attr('key')])
-      //   })
-      // } else {
-      //   $('.lang').each(function (index, element) {
-      //     $(this).html(arrLang['en'][$(this).attr('key')])
-      //   })
-      // }
-
-      $('.lang_ru').each(function (index, element) {
-        $(this).html(arrLang['ru'][$(this).attr('key')])
-      })
-
-      $('.lang_en').each(function (index, element) {
-        $(this).html(arrLang['en'][$(this).attr('key')])
-      })
-
-    });
-
-  })();
 
   // Toggle scroll
   function scrollToggle(box) {

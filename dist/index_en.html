@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <title>Mad location manager</title>
     <meta content="Mad Devs" name="author"/>
-    <meta content="Error filter GPS sensors" name="description"/>
+    <meta content="Accurate and «pure» Data from GPS-receivers" name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta property="og:image" content="path/to/image.jpg"/>
@@ -14,40 +14,15 @@
     <meta name="theme-color" content="#000"/>
     <meta name="msapplication-navbutton-color" content="#000"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
-    <link rel="stylesheet" href="css/libs.min.css"/>
-    <link rel="stylesheet" href="css/base.min.css"/>
-    <link rel="stylesheet" href="css/styles/index.css"/>
+    <style>.main-banner{padding-top:40px;background-position:center;background-size:cover;position:relative}.main-banner .main-menu{width:100%;min-height:100vh;position:fixed;top:0;left:0;background-color:#fff;display:none;z-index:12;overflow:scroll}.main-banner .main-menu .container{position:relative}.main-banner .main-menu .main-menu_btn-toggle{width:50px;height:50px;position:absolute;background-color:transparent;top:88px;margin-left:-16px;cursor:pointer;border-radius:100%}.main-banner .main-menu .main-menu_btn-toggle::before{content:'';width:15px;height:2px;display:block;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%) rotate(45deg);-ms-transform:translate(-50%) rotate(45deg);transform:translate(-50%) rotate(45deg);background-color:#222}.main-banner .main-menu .main-menu_btn-toggle::after{content:'';width:15px;height:2px;display:block;position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) rotate(135deg);-ms-transform:translateX(-50%) rotate(135deg);transform:translateX(-50%) rotate(135deg);background-color:#222}.main-banner .main-menu .main-menu_list{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;margin-top:90px}.main-banner .main-menu .main-menu_list a{list-style:none;font-size:32px;font-family:ClotherBold,sans-serif;color:#222;-webkit-transition:all .1s ease;-o-transition:all .1s ease;transition:all .1s ease;line-height:1;padding-bottom:30px}.main-banner .main-menu .main-menu_list a:hover{color:#0155fc}.main-banner .main-menu .main-menu_list .localization_btn,.main-banner .main-menu .main-menu_list button{font-family:SFProDisplayRegular,sans-serif;font-size:14px;color:#222;border:none;background-color:transparent;padding:15px}.main-banner .header{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:50px}.main-banner .header .menu_btn{width:calc((((100% - (30px * (12 - 1)))/ 12) * 3) + (30px * (3 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.main-banner .header .menu_btn button{background-color:transparent;border:none;padding:10px;margin-left:-10px}.main-banner .header .menu_btn button i{font-size:18px;color:#222}.main-banner .header .logo{width:calc((((100% - (30px * (12 - 1)))/ 12) * 6) + (30px * (6 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-banner .header .logo img{width:310px;margin-bottom:10px}.main-banner .header .logo p{font-size:14px;text-align:center}.main-banner .header .localization{width:calc((((100% - (30px * (12 - 1)))/ 12) * 3) + (30px * (3 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.main-banner .header .localization a,.main-banner .header .localization button{font-family:SFProDisplayRegular,sans-serif;font-size:14px;color:#222;border:none;background-color:transparent;padding:10px;margin-right:-10px;white-space:nowrap}.main-banner h1{margin-bottom:30px}.main-banner .main-banner_img{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-banner .main-banner_img .main-banner_img-item{width:calc((((100% - (30px * (12 - 1)))/ 12) * 4) + (30px * (4 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-banner .main-banner_img .main-banner_img-item .iphone-left{margin-right:100px}.main-banner .main-banner_img .main-banner_img-item .main-banner_phone{position:relative}.main-banner .main-banner_img .main-banner_img-item .main-banner_phone .main-banner_phone-gif{width:204px;top:80px;left:89px;position:absolute}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info p{font-size:18px;font-family:ClotherBold,sans-serif;margin-left:10px}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info .cross{color:#ff6159}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info .arrow{color:#29cb42}.main-banner .main-banner_img .main-banner_img-item .without_filter{margin-left:-56px}.main-banner .main-banner_img .main-banner_img-item .with_filter{margin-right:-36px}.main-banner .main-banner_btn{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:50px 0 40px}</style>
   </head>
   <body>
-    <div id="preloader">
-      <script>
-        var preloader = document.getElementById("preloader");
-        
-        function fadeOutnojquery(el){
-          el.style.opacity = 1;
-          var interpreloader = setInterval(function(){
-            el.style.opacity = el.style.opacity - 0.05;
-        
-            if (el.style.opacity <=0.05){
-              clearInterval(interpreloader);
-              preloader.style.display = "none";
-            }
-          },16);
-        }
-        
-        window.onload = function(){
-          setTimeout(function(){
-            fadeOutnojquery(preloader);
-          },500);
-        };
-      </script>
-    </div>
     <main>
       <section class="main-banner" id="main-banner" style="background-image: url('img/main-banner/bg.png')">
         <div class="main-menu">
           <div class="container">
             <div class="main-menu_btn-toggle"></div>
-            <div class="main-menu_list"><a class="lang_en lang" href="#main-banner" key="main-menu_item1"></a><a class="lang_en lang" href="#why-is-this" key="main-menu_item2"></a><a class="lang_en lang" href="#features" key="main-menu_item3"></a><a class="lang_en lang" href="#how-it-work" key="main-menu_item4"></a><a class="lang_en lang" href="#rotation-vector" key="main-menu_item5"></a><a class="lang_en lang" href="#footer" key="main-menu_item6"></a><a class="lang_en lang localization_btn" href="/ru" language="ru" key="main-menu_item7"></a></div>
+            <div class="main-menu_list"><a class="lang_en lang" href="#main-banner" key="main-menu_item1">Home</a><a class="lang_en lang" href="#why-is-this" key="main-menu_item2">Why do I need a filter?</a><a class="lang_en lang" href="#features" key="main-menu_item3">"What can?</a><a class="lang_en lang" href="#how-it-work" key="main-menu_item4">How does it work?</a><a class="lang_en lang" href="#rotation-vector" key="main-menu_item5">How to use?</a><a class="lang_en lang" href="#footer" key="main-menu_item6">Who did?</a><a class="lang_en lang localization_btn" href="/ru" language="ru" key="main-menu_item7">на русском</a></div>
           </div>
         </div>
         <div class="container">
@@ -56,41 +31,41 @@
               <button class="main-menu_btn-toggle"><i class="fas fa-bars"></i></button>
             </div>
             <div class="logo"><img src="img/logo.svg" alt="Logotype">
-              <p class="lang_en lang" key="logo_desc"></p>
+              <p class="lang_en lang" key="logo_desc">Accurate and «pure» Data from GPS-receivers</p>
             </div>
-            <div class="localization"><a class="lang_en lang localization_btn" href="/ru" language="ru" key="lang-toggle"></a></div>
+            <div class="localization"><a class="lang_en lang localization_btn" href="/ru" language="ru" key="lang-toggle">на русском</a></div>
           </div>
-          <h1 class="lang_en lang" key="main_title"></h1>
+          <h1 class="lang_en lang" key="main_title">Filter of GPS reciever's errors</h1>
           <div class="main-banner_img">
             <div class="main-banner_img-item">
               <div class="main-banner_img-item_info without_filter"><img src="img/main-banner/cross.svg" alt="">
-                <p class="lang_en lang cross" key="without_filter"></p>
+                <p class="lang_en lang cross" key="without_filter">without filter</p>
               </div>
               <div class="main-banner_phone"><img class="iphone-left" src="img/main-banner/bigphone.png" alt="Without filter"><img class="main-banner_phone-gif" src="img/main-banner/history.jpg" alt="Without filter"></div>
             </div>
             <div class="main-banner_img-item">
               <div class="main-banner_img-item_info with_filter"><img src="img/main-banner/arrow.svg" alt="">
-                <p class="lang_en lang arrow" key="with_filter"></p>
+                <p class="lang_en lang arrow" key="with_filter">with filter</p>
               </div>
               <div class="main-banner_phone"><img src="img/main-banner/bigphone.png" alt="With filter"><img class="main-banner_phone-gif" src="img/gif1.gif" alt="Without filter"></div>
             </div>
           </div>
           <div class="main-banner_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
-          <div class="main_links"><span class="lang_en lang or" key="main-banner_or"></span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="docs"></span></a></div>
+          <div class="main_links"><span class="lang_en lang or" key="main-banner_or"></span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="docs">Documentation and Theory</span></a></div>
         </div>
       </section>
       <section class="why-is-this" id="why-is-this">
         <div class="container">
-          <h2 class="lang_en lang" key="why-is-this_title"></h2>
+          <h2 class="lang_en lang" key="why-is-this_title">Why do you need Mad Location Manager?</h2>
           <div class="why-is-this_items">
             <div class="why-is-this_item"><img src="img/why-is-this/taxi.svg" alt="Taxi">
-              <p class="lang_en lang" key="why-is-this_p1"></p>
+              <p class="lang_en lang" key="why-is-this_p1">Are you tired of «extra» kilometers duу to an inaccuracy of GPS-data in taxi applications?</p>
             </div>
             <div class="why-is-this_item"><img src="img/why-is-this/delivery.svg" alt="Delivery">
-              <p class="lang_en lang" key="why-is-this_p2"></p>
+              <p class="lang_en lang" key="why-is-this_p2">Are there regular sharp «jumps» in the Applications for Courier tracking?</p>
             </div>
             <div class="why-is-this_item"><img src="img/why-is-this/ondemand.svg" alt="On demand">
-              <p class="lang_en lang" key="why-is-this_p3"></p>
+              <p class="lang_en lang" key="why-is-this_p3">Do you need precise tracking in an on-demand service?</p>
             </div>
           </div>
           <div class="decision-pointer">
@@ -108,58 +83,58 @@
                 <path class="svg-line decision-pointer_path" stroke="#fff" stroke-width="5" stroke-dasharray="0" fill="none"></path>
               </svg>
             </div>
-            <h5 class="lang_en lang" key="why-is-this_subtitle"></h5>
+            <h5 class="lang_en lang" key="why-is-this_subtitle">The solution is Mad Location Manager</h5>
           </div>
           <div class="why-is-this_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
         </div>
       </section>
       <section class="features" id="features">
         <div class="container">
-          <h2 class="lang_en lang" key="features_title"></h2>
+          <h2 class="lang_en lang" key="features_title">What are the features of Mad Location Manager?</h2>
           <div class="features_list">
             <div class="features_item"><img src="img/features/routeerrors.svg" alt="Route errors">
-              <p class="lang_en lang" key="features_p1"></p>
+              <p class="lang_en lang" key="features_p1">It reduces the errors in route tracking</p>
             </div>
             <div class="features_item"><img src="img/features/staticroute.svg" alt="Static route">
-              <p class="lang_en lang" key="features_p2"></p>
+              <p class="lang_en lang" key="features_p2">It allows making motion of the objects on the map</p>
             </div>
             <div class="features_item"><img src="img/features/zigzagroute.svg" alt="Zigzag route">
-              <p class="lang_en lang" key="features_p3"></p>
+              <p class="lang_en lang" key="features_p3">It eliminates additional distance when the object is motionless</p>
             </div>
             <div class="features_item"><img src="img/features/smothroute.svg" alt="Smoth route">
-              <p class="lang_en lang" key="features_p4"></p>
+              <p class="lang_en lang" key="features_p4">It decreases the noise from Low-class smartphones</p>
             </div>
             <div class="features_item"><img src="img/features/noiseroute.svg" alt="Noise route">
-              <p class="lang_en lang" key="features_p5"></p>
+              <p class="lang_en lang" key="features_p5">It excludes sharp «jumps» to the points remote from a real route</p>
             </div>
             <div class="features_item"><img src="img/features/nogps.svg" alt="No gps">
-              <p class="lang_en lang" key="features_p6"></p>
+              <p class="lang_en lang" key="features_p6">It filters errors duу to the short-term loss of GPS-signal</p>
             </div>
           </div>
           <div class="features_sub-title">
-            <h4 class="lang_en lang" key="features_subtitle"></h4>
+            <h4 class="lang_en lang" key="features_subtitle">In addition, it solves the other tasks related to the delivery and tracking of the objects moving on the map</h4>
           </div>
           <div class="features_pointer"><a href="#how-it-work">
-              <p class="lang_en lang" key="features_how_work"></p><img src="img/down.svg" alt="Bottom"></a></div>
+              <p class="lang_en lang" key="features_how_work">How does it work?</p><img src="img/down.svg" alt="Bottom"></a></div>
         </div>
       </section>
       <section class="how-it-work" id="how-it-work">
         <div class="container">
-          <h2 class="lang_en lang" key="how-it-work_title"></h2>
+          <h2 class="lang_en lang" key="how-it-work_title">How does it work?</h2>
           <div class="how-it-work_sub-title">
-            <h4 class="lang_en lang" key="how-it-work_subtitle"></h4>
+            <h4 class="lang_en lang" key="how-it-work_subtitle">To implement the system we need data from the following three sensors:</h4>
           </div>
           <div class="how-it-work_items">
             <div class="how-it-work_item how-it-work_item1"><img src="img/how-it-work/magnetometer.svg" alt="Magnetometer">
               <div class="how-it-work_item-text">
-                <h5 class="lang_en lang" key="how-it-work_item1_title"></h5>
-                <p class="lang_en lang" key="how-it-work_item1_desc"></p>
+                <h5 class="lang_en lang" key="how-it-work_item1_title">Magnetometer</h5>
+                <p class="lang_en lang" key="how-it-work_item1_desc">Shows where the North is</p>
               </div>
             </div>
             <div class="how-it-work_item how-it-work_item2"><img src="img/how-it-work/accelerometer.svg" alt="Accelerometer">
               <div class="how-it-work_item-text">
-                <h5 class="lang_en lang" key="how-it-work_item2_title"></h5>
-                <p class="lang_en lang" key="how-it-work_item2_desc"></p>
+                <h5 class="lang_en lang" key="how-it-work_item2_title">Accelerometer</h5>
+                <p class="lang_en lang" key="how-it-work_item2_desc">Is used for acceleration measurement and angle determination</p>
               </div>
             </div>
             <div class="how-it-work_item how-it-work_item3">
@@ -180,8 +155,8 @@
             </div>
             <div class="how-it-work_item how-it-work_item4"><img src="img/how-it-work/gyroscope.svg" alt="Gyroscope">
               <div class="how-it-work_item-text">
-                <h5 class="lang_en lang" key="how-it-work_item3_title"></h5>
-                <p class="lang_en lang" key="how-it-work_item3_desc"></p>
+                <h5 class="lang_en lang" key="how-it-work_item3_title">Gyroscope</h5>
+                <p class="lang_en lang" key="how-it-work_item3_desc">Allows us to get the current position of the object through the integration of gyroscope readings given the initial object position</p>
               </div>
             </div>
             <div class="how-it-work_item how-it-work_item6">
@@ -204,7 +179,7 @@
         </div>
         <div class="container">
           <div class="android-sensors_sub-title">
-            <h4 class="lang_en lang" key="android-sensors_title"></h4>
+            <h4 class="lang_en lang" key="android-sensors_title">The simplest and the most convenient are virtual Android sensors</h4>
           </div>
           <div class="android-sensors_img">
             <svg class="svg-center" version="1.1" baseprofile="full" width="6" height="165" xmlns="http://www.w3.org/2000/svg">
@@ -217,18 +192,18 @@
       <section class="rotation-vector" id="rotation-vector">
         <div class="container">
           <div class="rotation-vector_sub-title">
-            <h4 class="lang_en lang" key="rotation_vector_title"></h4>
+            <h4 class="lang_en lang" key="rotation_vector_title">We have an acceleration vector in the “absolute” coordinate system and we can implement Kalman filter</h4>
           </div>
           <div class="rotation-vector_info">
             <div class="rotation-vector_item">
               <div class="plus"></div><img src="img/rotation-vector/and-dat.svg" alt="And dat">
-              <h5 class="lang_en lang" key="rotation_vector_item1_title"></h5>
-              <p class="lang_en lang" key="rotation_vector_item1_desc"></p>
+              <h5 class="lang_en lang" key="rotation_vector_item1_title">Virtual Android sensors</h5>
+              <p class="lang_en lang" key="rotation_vector_item1_desc">We can use a LINEAR_ACCELERATION sensor for linear accelerations (excluding gravity force) and ROTATION_VECTOR sensor for device orientation</p>
             </div>
             <div class="rotation-vector_item">
               <div class="equal"></div><img src="img/rotation-vector/kalman.svg" alt="Kalman">
-              <h5 class="lang_en lang" key="rotation_vector_item2_title"></h5>
-              <p class="lang_en lang" key="rotation_vector_item2_desc"></p>
+              <h5 class="lang_en lang" key="rotation_vector_item2_title">Kalman filter</h5>
+              <p class="lang_en lang" key="rotation_vector_item2_desc">We determine the state vector of the system, the transition matrix, the control vector, and other components of the Kalman filter. Then define the covariance noise matrix of the process and measurement noise. In this form, it is relatively easy to implement the filter</p>
             </div>
           </div>
           <div class="rotation-vector_item-logo">
@@ -238,7 +213,7 @@
             </div><img src="img/logo.svg" alt="Logotype">
           </div>
           <div class="and-if-briefly">
-            <h4 class="lang_en lang" key="rotation_vector_simple"></h4>
+            <h4 class="lang_en lang" key="rotation_vector_simple">To make the long story short…</h4>
             <div class="and-if-briefly_images">
               <div class="and-if-briefly_img-wrap1">
                 <div class="and-if-briefly_img"><img src="img/rotation-vector/accelerometer.svg" alt="Accelerometer">
@@ -266,93 +241,93 @@
       </section>
       <section class="filter-parameters">
         <div class="container">
-          <h2 class="lang_en lang" key="filter-parameters_title"></h2>
+          <h2 class="lang_en lang" key="filter-parameters_title">Filter parameters</h2>
           <div class="filter-parameters_sub-title">
-            <h4 class="lang_en lang" key="filter-parameters_subtitle1"></h4>
+            <h4 class="lang_en lang" key="filter-parameters_subtitle1">Now we have to determine the types of matrixes</h4>
           </div>
           <div class="filter-parameters_list">
             <div class="filter-parameters_item"><img src="img/filter-parameters/1.svg" alt="">
-              <p class="lang_en lang" key="filter-parameters_item1"></p>
+              <p class="lang_en lang" key="filter-parameters_item1">System state vector</p>
             </div>
             <div class="filter-parameters_item"><img src="img/filter-parameters/2.svg" alt="">
-              <p class="lang_en lang" key="filter-parameters_item2"></p>
+              <p class="lang_en lang" key="filter-parameters_item2">State-transition model</p>
             </div>
             <div class="filter-parameters_item"><img src="img/filter-parameters/3.svg" alt="">
-              <p class="lang_en lang" key="filter-parameters_item3"></p>
+              <p class="lang_en lang" key="filter-parameters_item3">Control-input mode</p>
             </div>
             <div class="filter-parameters_item"><img src="img/filter-parameters/4.svg" alt="">
-              <p class="lang_en lang" key="filter-parameters_item4"></p>
+              <p class="lang_en lang" key="filter-parameters_item4">Control Vector</p>
             </div>
             <div class="filter-parameters_item"><img src="img/filter-parameters/5.svg" alt="">
-              <p class="lang_en lang" key="filter-parameters_item5"></p>
+              <p class="lang_en lang" key="filter-parameters_item5">Observation model</p>
             </div>
           </div>
           <div class="several-operation">
             <div class="several-operation_sub-title">
-              <h4 class="lang_en lang" key="several-operation_title"></h4>
+              <h4 class="lang_en lang" key="several-operation_title">Perform several operations with matrices</h4>
             </div>
-            <p class="lang_en lang" key="several-operation_desc"></p><img class="pic-1" src="img/filter-parameters/6.svg" alt=""><span class="lang_en lang" key="several-operation_pic1"></span>
-            <p class="lang_en lang" key="several-operation_p1"></p><img class="pic-2" src="img/filter-parameters/7.svg" alt=""><span class="lang_en lang" key="several-operation_pic2"></span>
-            <p class="lang_en lang" key="several-operation_p2"></p><img class="pic-3" src="img/filter-parameters/8.svg" alt=""><span class="lang_en lang" key="several-operation_pic3"></span>
-            <p class="lang_en lang" key="several-operation_p3"></p><img class="pic-4" src="img/filter-parameters/9.svg" alt=""><img class="pic-5" src="img/filter-parameters/10.svg" alt=""><span class="lang_en lang" key="several-operation_pic4"></span>
-            <p class="last-p lang_en lang" key="several-operation_p4"></p>
+            <p class="lang_en lang" key="several-operation_desc">The observation model maps the true state space into the observed space. In our case, it equals to identity matrix as we can get everything from a GPS receiver (speed and coordinates) and don’t need to convert it. If the receiver can’t get information about speed then an observation model changes to this:</p><img class="pic-1" src="img/filter-parameters/6.svg" alt=""><span class="lang_en lang" key="several-operation_pic1">pic. 1</span>
+            <p class="lang_en lang" key="several-operation_p1">The second one shows the better result with a short-term loss of the GPS signal because the state vector is not affected by the last speed received from a receiver.</p><img class="pic-2" src="img/filter-parameters/7.svg" alt=""><span class="lang_en lang" key="several-operation_pic2">pic.2 Covariance noise measurement matrix</span>
+            <p class="lang_en lang" key="several-operation_p2">If a receiver doesn’t provide information about speed. Otherwise:</p><img class="pic-3" src="img/filter-parameters/8.svg" alt=""><span class="lang_en lang" key="several-operation_pic3">pic. 3</span>
+            <p class="lang_en lang" key="several-operation_p3">These values could be received in different ways. You can parse NMEA message and use HDOP value. Also, you can use Location class getAccuracy() method. We should know the direction to get speed to in our coordinate system. For this, we can use either course component from NMEA message or getBearing() method from Location class.</p><img class="pic-4" src="img/filter-parameters/9.svg" alt=""><img class="pic-5" src="img/filter-parameters/10.svg" alt=""><span class="lang_en lang" key="several-operation_pic4">pic. 4 Process noise covariance matrix</span>
+            <p class="last-p lang_en lang" key="several-operation_p4">Over time the positioning error due to the integration of accelerometer readings will increase. Therefore, we have to take GPS-coordinate as the result instead of accelerometer reading. Dt is the period between 2 update steps (obtaining of GPS-coordinates) in Kalman filter.</p>
           </div>
           <div class="filter-parameters_sub-title2">
-            <h4 class="lang_en lang" key="filter-parameters_subtitle2"></h4>
+            <h4 class="lang_en lang" key="filter-parameters_subtitle2">To make Kalman filter work, we have to bring all the data to the single coordinate system.</h4>
           </div>
         </div>
       </section>
       <section class="geohash">
         <div class="container">
-          <h2 class="lang_en lang" key="geohash_title"></h2>
+          <h2 class="lang_en lang" key="geohash_title">GeoHash</h2>
           <div class="geohash_content">
             <div class="geohash_sub-title">
-              <h4 class="lang_en lang" key="geohash_subtitle"></h4>
+              <h4 class="lang_en lang" key="geohash_subtitle">The algorithm for converting two coordinates of the form 42.8795949 (longitude), 74.5998444 (latitude) into one string</h4>
             </div>
-            <p class="lang_en lang" key="geohash_p1"></p>
-            <h4 class="lang_en lang" key="geohash_subtitle2"></h4>
-            <p class="lang_en lang" key="geohash_p2"></p>
+            <p class="lang_en lang" key="geohash_p1">In this project, it is used to solve 2 problems. First, it is necessary to somehow merge the nearby points to reduce the flow of redundant information. To do this, you can select a radius and merge all the points that fall into the circle with this radius. But how to choose the radius and center of this circle? Calculating the distance in spherical coordinates is a costly operation, so a GeoHash function is used to “join” fast coordinates. This function produces a hash as a string, the length of which is determined by the user and affects the encoding accuracy. The longer the hash length is, the smaller the region is and the greater accuracy of the coordinates is in one region. The maximum possible length of a GeoHash string is 12 characters. A very good result for our task shows hash with 7 and 8 precision.</p>
+            <h4 class="lang_en lang" key="geohash_subtitle2">Another application of this function</h4>
+            <p class="lang_en lang" key="geohash_p2">Another way to use this function is “jumps” filtering. We will assume that if the GPS receiver has given out more than 3 (user-defined count) coordinates with one hash, then this point is correct and it should be taken into account. If less — then, probably, this is some random value that does not need to be taken into account.</p>
             <div class="geohash_slider">
               <div class="geohash_slide" style="background-image: url('img/geohash/1.png')">
-                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3"></p>
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3">A route without the implementation of the GeoHash-based filter</p>
               </div>
               <div class="geohash_slide" style="background-image: url('img/geohash/2.png')">
-                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.2"></p>
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.2">A route with GeoHash-based filter. The length of the string (accuracy) is 8. The minimum number of points with one geohash is 2</p>
               </div>
               <div class="geohash_slide" style="background-image: url('img/geohash/3.png')">
-                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.3"></p>
+                <p class="lang_en lang geohash_slider-desc geohash_slider-desc1" key="geohash_p3.3">A route with GeoHash-based filter. The length of the string (accuracy) is 7. The minimum number of points with one geohash is 3</p>
               </div>
             </div>
-            <p class="lang_en lang" key="geohash_p4"></p>
-            <h4 class="lang_en lang" key="geohash_subtitle3"></h4>
-            <p class="lang_en lang" key="geohash_p5"></p>
-            <p class="lang_en lang geohash_slider-desc geohash_slider-desc2" key="geohash_p6"></p>
+            <p class="lang_en lang" key="geohash_p4">Examples above illustrate that GeoHash filter allows to significantly reduce the number of processing coordinates. It may be crucial if coordinates are planned to be processed by the server or to save the routes in the database.</p>
+            <h4 class="lang_en lang" key="geohash_subtitle3">Result, conclusion and further improvements</h4>
+            <p class="lang_en lang" key="geohash_p5">As a result, we wrote an Android module and a C library that implements all of the above filters. Visually routes became smoothed and calculation error was reduced.</p>
+            <p class="lang_en lang geohash_slider-desc geohash_slider-desc2" key="geohash_p6">Red points are GPS coordinate. Blue points — filtered values.</p>
             <div class="geohash_slider geohash_slider2">
               <div class="geohash_slide" style="background-image: url('img/geohash/4.png')"></div>
             </div>
-            <p class="lang_en lang" key="geohash_p7"></p>
+            <p class="lang_en lang" key="geohash_p7">Green line shows GPS data with significant nose. Red one - filtered data (firstly, by Kalman filter, than by filter based on GeoHash)</p>
             <div class="geohash_gif"><img class="geohash_iphone" src="img/geohash/bigphone.png" alt=""><img class="geohash_phone-gif" src="img/gif1.gif" alt="Without filter"></div>
-            <p class="lang_en lang" key="geohash_p8"></p>
-            <div class="geohash_detail-blog"><span class="lang_en lang" key="geohash_link"><a href="https://medium.com/@lezh1k.vohrer/b81f1026e06c" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"> Детали расчетов можно посмотреть в блоге</a></span></div>
+            <p class="lang_en lang" key="geohash_p8">Two algorithms were used to calculate the distance. One of them is the Vincenti algorithm. It is used inside of the distanceBetween() method of the Location class. The second method: <a href='https://en.wikipedia.org/wiki/Great-circle_distance' target='_blank'>https://en.wikipedia.org/wiki/Great-circle_distance</a> (section with the haversine formula). Tests show that the results are almost the same, while the second option requires fewer resources. Yet, there are high chances that at greater distances the error will be greater. Within the city, both algorithms will operate the same way.</p>
+            <div class="geohash_detail-blog"><span class="lang_en lang" key="geohash_link"><a href='https://blog.maddevs.io/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c' target='_blank'><img src='img/right.svg', alt='Right'>You can see calculation details in our blog</a></span></div>
           </div>
         </div>
       </section>
       <section class="use-and-develop">
         <div class="container">
-          <h2 class="lang_en lang" key="use_dev_title"></h2>
+          <h2 class="lang_en lang" key="use_dev_title">Use and develop</h2>
           <div class="use-and-develop_info">
-            <p class="lang_en lang" key="use_dev_desc"></p>
+            <p class="lang_en lang" key="use_dev_desc">The solution if licensed by <a href='https://opensource.org/licenses/MIT' target='_blank'>MIT</a>. Therefore, do not Forget about the copyrights and authorship</p>
           </div>
           <div class="use-and-develop_btn"><a class="fork-me-github" href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow"><i class="fab fa-github"></i>Fork me on Github</a></div>
-          <div class="main_links"><span class="lang_en lang or" key="use_dev_or"></span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="use_dev_docs"></span></a></div>
+          <div class="main_links"><span class="lang_en lang or" key="use_dev_or">or</span><a class="main_links_doc" href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow"><img src="img/right.svg" alt="Right"><span class="lang_en lang" key="use_dev_docs">Documentation and Theory</span></a></div>
         </div>
       </section>
       <section class="footer" id="footer">
         <div class="container">
-          <h2 class="lang_en lang" key="footer_title"></h2>
+          <h2 class="lang_en lang" key="footer_title">All the magic happened thanks to MadDevs</h2>
           <div class="footer_logo"><img src="img/footer/mad-logo.svg" alt="Mad Devs"><a href="https://maddevs.io/" target="_blank">https://maddevs.io/</a></div>
           <div class="footer_text">
-            <p class="lang_en lang" key="footer_desc"></p>
+            <p class="lang_en lang" key="footer_desc">To express gratitude or to get consultation or assistance in the system implementation write to <a href='mailto:rock@maddevs.io' target='_blank'>rock@maddevs.io <img src='img/footer/hand.svg' alt='Hand'></a></p>
           </div>
           <div class="footer_soc-icons"><a href="https://github.com/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-github"></i></a><a href="https://www.instagram.com/maddevsio/" target="_blank" rel="nofollow"><i class="fab fa-instagram"></i></a><a href="https://twitter.com/MadDevsIO" target="_blank" rel="nofollow"><i class="fab fa-twitter"></i></a><a href="https://blog.maddevs.io/" target="_blank" rel="nofollow"><i class="fab fa-medium-m"></i></a><a href="https://t.me/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-telegram-plane"></i></a><a href="https://www.slideshare.net/maddevs/presentations" target="_blank" rel="nofollow"><i class="fab fa-slideshare"></i></a><a href="https://www.youtube.com/playlist?list=PLsmdb5W8ytypyXt1ut3lfBOnOZnDNqYIN" target="_blank" rel="nofollow"><i class="fab fa-youtube"></i></a><a href="https://www.facebook.com/maddevsio" target="_blank" rel="nofollow"><i class="fab fa-facebook-f"></i></a></div>
         </div>
@@ -361,6 +336,9 @@
     <section class="copy-right">
       <p>© Mad Devs, <span id="copyright_years"></span></p>
     </section>
+    <link rel="stylesheet" href="css/styles/index.min.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/base.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83208754-6"></script>
     <script>

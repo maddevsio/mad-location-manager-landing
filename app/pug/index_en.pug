@@ -6,45 +6,25 @@ html(lang="en")
       +head({
         "title": "Mad location manager",
 				"author": "Mad Devs",
-				"description": "Error filter GPS sensors",
-				"style": "index"
+				"description": "Accurate and «pure» Data from GPS-receivers"
       })
+      style.
+        .main-banner{padding-top:40px;background-position:center;background-size:cover;position:relative}.main-banner .main-menu{width:100%;min-height:100vh;position:fixed;top:0;left:0;background-color:#fff;display:none;z-index:12;overflow:scroll}.main-banner .main-menu .container{position:relative}.main-banner .main-menu .main-menu_btn-toggle{width:50px;height:50px;position:absolute;background-color:transparent;top:88px;margin-left:-16px;cursor:pointer;border-radius:100%}.main-banner .main-menu .main-menu_btn-toggle::before{content:'';width:15px;height:2px;display:block;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%) rotate(45deg);-ms-transform:translate(-50%) rotate(45deg);transform:translate(-50%) rotate(45deg);background-color:#222}.main-banner .main-menu .main-menu_btn-toggle::after{content:'';width:15px;height:2px;display:block;position:absolute;top:50%;left:50%;-webkit-transform:translateX(-50%) rotate(135deg);-ms-transform:translateX(-50%) rotate(135deg);transform:translateX(-50%) rotate(135deg);background-color:#222}.main-banner .main-menu .main-menu_list{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center;margin-top:90px}.main-banner .main-menu .main-menu_list a{list-style:none;font-size:32px;font-family:ClotherBold,sans-serif;color:#222;-webkit-transition:all .1s ease;-o-transition:all .1s ease;transition:all .1s ease;line-height:1;padding-bottom:30px}.main-banner .main-menu .main-menu_list a:hover{color:#0155fc}.main-banner .main-menu .main-menu_list .localization_btn,.main-banner .main-menu .main-menu_list button{font-family:SFProDisplayRegular,sans-serif;font-size:14px;color:#222;border:none;background-color:transparent;padding:15px}.main-banner .header{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:50px}.main-banner .header .menu_btn{width:calc((((100% - (30px * (12 - 1)))/ 12) * 3) + (30px * (3 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}.main-banner .header .menu_btn button{background-color:transparent;border:none;padding:10px;margin-left:-10px}.main-banner .header .menu_btn button i{font-size:18px;color:#222}.main-banner .header .logo{width:calc((((100% - (30px * (12 - 1)))/ 12) * 6) + (30px * (6 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-banner .header .logo img{width:310px;margin-bottom:10px}.main-banner .header .logo p{font-size:14px;text-align:center}.main-banner .header .localization{width:calc((((100% - (30px * (12 - 1)))/ 12) * 3) + (30px * (3 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.main-banner .header .localization a,.main-banner .header .localization button{font-family:SFProDisplayRegular,sans-serif;font-size:14px;color:#222;border:none;background-color:transparent;padding:10px;margin-right:-10px;white-space:nowrap}.main-banner h1{margin-bottom:30px}.main-banner .main-banner_img{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-banner .main-banner_img .main-banner_img-item{width:calc((((100% - (30px * (12 - 1)))/ 12) * 4) + (30px * (4 - 1)));display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.main-banner .main-banner_img .main-banner_img-item .iphone-left{margin-right:100px}.main-banner .main-banner_img .main-banner_img-item .main-banner_phone{position:relative}.main-banner .main-banner_img .main-banner_img-item .main-banner_phone .main-banner_phone-gif{width:204px;top:80px;left:89px;position:absolute}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info p{font-size:18px;font-family:ClotherBold,sans-serif;margin-left:10px}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info .cross{color:#ff6159}.main-banner .main-banner_img .main-banner_img-item .main-banner_img-item_info .arrow{color:#29cb42}.main-banner .main-banner_img .main-banner_img-item .without_filter{margin-left:-56px}.main-banner .main-banner_img .main-banner_img-item .with_filter{margin-right:-36px}.main-banner .main-banner_btn{min-width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin:50px 0 40px}
   body
     //- ///////////////////////Code//////////////////////// 
-    #preloader
-      script.
-        var preloader = document.getElementById("preloader");
-        
-        function fadeOutnojquery(el){
-          el.style.opacity = 1;
-          var interpreloader = setInterval(function(){
-            el.style.opacity = el.style.opacity - 0.05;
-
-            if (el.style.opacity <=0.05){
-              clearInterval(interpreloader);
-              preloader.style.display = "none";
-            }
-          },16);
-        }
-        
-        window.onload = function(){
-          setTimeout(function(){
-            fadeOutnojquery(preloader);
-          },500);
-        };
     main
       section.main-banner#main-banner(style="background-image: url('img/main-banner/bg.png')")
         .main-menu
           .container
             .main-menu_btn-toggle
             .main-menu_list
-              a.lang_en.lang(href="#main-banner" key="main-menu_item1")
-              a.lang_en.lang(href="#why-is-this" key="main-menu_item2")
-              a.lang_en.lang(href="#features" key="main-menu_item3")
-              a.lang_en.lang(href="#how-it-work" key="main-menu_item4")
-              a.lang_en.lang(href="#rotation-vector" key="main-menu_item5")
-              a.lang_en.lang(href="#footer" key="main-menu_item6")
-              a(href="/ru" language="ru", key="main-menu_item7").lang_en.lang.localization_btn
+              a.lang_en.lang(href="#main-banner" key="main-menu_item1") Home
+              a.lang_en.lang(href="#why-is-this" key="main-menu_item2") Why do I need a filter?
+              a.lang_en.lang(href="#features" key="main-menu_item3") "What can?
+              a.lang_en.lang(href="#how-it-work" key="main-menu_item4") How does it work?
+              a.lang_en.lang(href="#rotation-vector" key="main-menu_item5") How to use?
+              a.lang_en.lang(href="#footer" key="main-menu_item6") Who did?
+              a(href="/ru" language="ru", key="main-menu_item7").lang_en.lang.localization_btn на русском
         .container
           .header
             .menu_btn
@@ -52,22 +32,22 @@ html(lang="en")
                 i(class="fas fa-bars")
             .logo
               img(src="img/logo.svg", alt="Logotype")
-              p.lang_en.lang(key="logo_desc")
+              p.lang_en.lang(key="logo_desc") Accurate and «pure» Data from GPS-receivers
             .localization
-              a(href="/ru" language="ru" key="lang-toggle").lang_en.lang.localization_btn
-          h1.lang_en.lang(key="main_title")
+              a(href="/ru" language="ru" key="lang-toggle").lang_en.lang.localization_btn на русском
+          h1.lang_en.lang(key="main_title") Filter of GPS reciever's errors
           .main-banner_img
             .main-banner_img-item
               .main-banner_img-item_info.without_filter
                 img(src="img/main-banner/cross.svg", alt="")
-                p.lang_en.lang.cross(key="without_filter")
+                p.lang_en.lang.cross(key="without_filter") without filter
               .main-banner_phone
                 img.iphone-left(src="img/main-banner/bigphone.png", alt="Without filter")
                 img.main-banner_phone-gif(src="img/main-banner/history.jpg", alt="Without filter")
             .main-banner_img-item
               .main-banner_img-item_info.with_filter
                 img(src="img/main-banner/arrow.svg", alt="")
-                p.lang_en.lang.arrow(key="with_filter")
+                p.lang_en.lang.arrow(key="with_filter") with filter
               .main-banner_phone
                 img(src="img/main-banner/bigphone.png", alt="With filter")
                 img.main-banner_phone-gif(src="img/gif1.gif", alt="Without filter")
@@ -79,20 +59,20 @@ html(lang="en")
             span.lang_en.lang.or(key="main-banner_or")
             a.main_links_doc(href="https://github.com/maddevsio/mad-location-manager/wiki/Theory", target="_blank" rel="nofollow")
               img(src="img/right.svg", alt="Right")
-              span.lang_en.lang(key="docs")
+              span.lang_en.lang(key="docs") Documentation and Theory
       section.why-is-this#why-is-this
         .container
-          h2.lang_en.lang(key="why-is-this_title")
+          h2.lang_en.lang(key="why-is-this_title") Why do you need Mad Location Manager?
           .why-is-this_items
             .why-is-this_item
               img(src="img/why-is-this/taxi.svg", alt="Taxi")
-              p.lang_en.lang(key="why-is-this_p1")
+              p.lang_en.lang(key="why-is-this_p1") Are you tired of «extra» kilometers duу to an inaccuracy of GPS-data in taxi applications?
             .why-is-this_item
               img(src="img/why-is-this/delivery.svg", alt="Delivery")
-              p.lang_en.lang(key="why-is-this_p2")
+              p.lang_en.lang(key="why-is-this_p2") Are there regular sharp «jumps» in the Applications for Courier tracking?
             .why-is-this_item
               img(src="img/why-is-this/ondemand.svg", alt="On demand")
-              p.lang_en.lang(key="why-is-this_p3")
+              p.lang_en.lang(key="why-is-this_p3") Do you need precise tracking in an on-demand service?
           .decision-pointer
             .decision-pointer_lines
               //- left
@@ -107,55 +87,55 @@ html(lang="en")
               svg.svg-right(version='1.1', baseprofile='full', height='165', xmlns='http://www.w3.org/2000/svg')
                 path.decision-pointer_path(stroke="#0155fc" stroke-dasharray="3, 8" stroke-width="2" fill="none")
                 path.svg-line.decision-pointer_path(stroke="#fff" stroke-width="5" stroke-dasharray="0" fill="none")
-            h5.lang_en.lang(key="why-is-this_subtitle")
+            h5.lang_en.lang(key="why-is-this_subtitle") The solution is Mad Location Manager
           .why-is-this_btn
             a(href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow").fork-me-github
               i(class="fab fa-github")
               | Fork me on Github
       section.features#features
         .container
-          h2.lang_en.lang(key="features_title")
+          h2.lang_en.lang(key="features_title") What are the features of Mad Location Manager?
           .features_list
             .features_item
               img(src="img/features/routeerrors.svg", alt="Route errors")
-              p.lang_en.lang(key="features_p1")
+              p.lang_en.lang(key="features_p1") It reduces the errors in route tracking
             .features_item
               img(src="img/features/staticroute.svg", alt="Static route")
-              p.lang_en.lang(key="features_p2")
+              p.lang_en.lang(key="features_p2") It allows making motion of the objects on the map
             .features_item
               img(src="img/features/zigzagroute.svg", alt="Zigzag route")
-              p.lang_en.lang(key="features_p3")
+              p.lang_en.lang(key="features_p3") It eliminates additional distance when the object is motionless
             .features_item
               img(src="img/features/smothroute.svg", alt="Smoth route")
-              p.lang_en.lang(key="features_p4")
+              p.lang_en.lang(key="features_p4") It decreases the noise from Low-class smartphones
             .features_item
               img(src="img/features/noiseroute.svg", alt="Noise route")
-              p.lang_en.lang(key="features_p5")
+              p.lang_en.lang(key="features_p5") It excludes sharp «jumps» to the points remote from a real route
             .features_item
               img(src="img/features/nogps.svg", alt="No gps")
-              p.lang_en.lang(key="features_p6")
+              p.lang_en.lang(key="features_p6") It filters errors duу to the short-term loss of GPS-signal
           .features_sub-title
-            h4.lang_en.lang(key="features_subtitle")
+            h4.lang_en.lang(key="features_subtitle") In addition, it solves the other tasks related to the delivery and tracking of the objects moving on the map
           .features_pointer
             a(href="#how-it-work")
-              p.lang_en.lang(key="features_how_work")
+              p.lang_en.lang(key="features_how_work") How does it work?
               img(src="img/down.svg", alt="Bottom")
       section.how-it-work#how-it-work
         .container
-          h2.lang_en.lang(key="how-it-work_title")
+          h2.lang_en.lang(key="how-it-work_title") How does it work?
           .how-it-work_sub-title
-            h4.lang_en.lang(key="how-it-work_subtitle")
+            h4.lang_en.lang(key="how-it-work_subtitle") To implement the system we need data from the following three sensors:
           .how-it-work_items
             .how-it-work_item.how-it-work_item1
               img(src="img/how-it-work/magnetometer.svg", alt="Magnetometer")
               .how-it-work_item-text
-                h5.lang_en.lang(key="how-it-work_item1_title")
-                p.lang_en.lang(key="how-it-work_item1_desc")
+                h5.lang_en.lang(key="how-it-work_item1_title") Magnetometer
+                p.lang_en.lang(key="how-it-work_item1_desc") Shows where the North is
             .how-it-work_item.how-it-work_item2
               img(src="img/how-it-work/accelerometer.svg", alt="Accelerometer")
               .how-it-work_item-text
-                h5.lang_en.lang(key="how-it-work_item2_title")
-                p.lang_en.lang(key="how-it-work_item2_desc")
+                h5.lang_en.lang(key="how-it-work_item2_title") Accelerometer
+                p.lang_en.lang(key="how-it-work_item2_desc") Is used for acceleration measurement and angle determination
             .how-it-work_item.how-it-work_item3
               .how-it-work_item-svg
                 img.phone_blue(src="img/how-it-work/phone_blue.png", alt="Phone blue")
@@ -174,8 +154,8 @@ html(lang="en")
             .how-it-work_item.how-it-work_item4
               img(src="img/how-it-work/gyroscope.svg", alt="Gyroscope")
               .how-it-work_item-text
-                h5.lang_en.lang(key="how-it-work_item3_title")
-                p.lang_en.lang(key="how-it-work_item3_desc")
+                h5.lang_en.lang(key="how-it-work_item3_title") Gyroscope
+                p.lang_en.lang(key="how-it-work_item3_desc") Allows us to get the current position of the object through the integration of gyroscope readings given the initial object position
             .how-it-work_item.how-it-work_item6
               .how-it-work_android
                 img(src="img/how-it-work/and-dat-white.svg", alt="")
@@ -189,7 +169,7 @@ html(lang="en")
             path.android-path_bg3.svg-line(stroke="#fff" stroke-width="1" fill="none" d="M0.955696203,0.911893018 C12.7843484,45.5785597 24.6130006,67.911893 36.4416527,67.911893 C54.184631,67.911893 54.184631,0.911893018 71.9276093,0.911893018 C89.6705876,0.911893018 89.6705876,67.911893 107.413566,67.911893 C125.156544,67.911893 125.156544,0.911893018 142.899522,0.911893018 C160.642501,0.911893018 160.642501,67.911893 178.385479,67.911893 C196.128457,67.911893 196.128457,0.911893018 213.871435,0.911893018 C231.614414,0.911893018 231.614414,67.911893 249.357392,67.911893 C267.10037,67.911893 267.10037,0.911893018 284.843349,0.911893018 C302.586327,0.911893018 302.586327,67.911893 320.329305,67.911893 C338.072283,67.911893 338.072283,0.911893018 355.815262,0.911893018 C373.55824,0.911893018 373.55824,67.911893 391.301218,67.911893 C409.044196,67.911893 409.044196,0.911893018 426.787175,0.911893018 C444.530153,0.911893018 444.530153,67.911893 462.273131,67.911893 C480.01611,67.911893 480.01611,0.911893018 497.759088,0.911893018 C515.502066,0.911893018 515.502066,67.911893 533.245044,67.911893 C550.988023,67.911893 550.988023,0.911893018 568.731001,0.911893018 C586.473979,0.911893018 586.473979,67.911893 604.216958,67.911893 C621.959936,67.911893 621.959936,0.911893018 639.702914,0.911893018 C657.445892,0.911893018 657.445892,67.911893 675.188871,67.911893 C692.931849,67.911893 692.931849,0.911893018 710.674827,0.911893018 C728.417805,0.911893018 728.417805,67.911893 746.160784,67.911893 C763.903762,67.911893 763.903762,0.911893018 781.64674,0.911893018 C799.389719,0.911893018 799.389719,67.911893 817.132697,67.911893 C834.875675,67.911893 834.875675,0.911893018 852.618653,0.911893018 C870.361632,0.911893018 870.361632,67.911893 888.10461,67.911893 C905.847588,67.911893 905.847588,0.911893018 923.590566,0.911893018 C941.333545,0.911893018 941.333545,67.911893 959.076523,67.911893 C976.819501,67.911893 976.819501,0.911893018 994.56248,0.911893018 C1012.30546,0.911893018 1012.30546,67.911893 1030.04844,67.911893 C1047.79141,67.911893 1047.79141,0.911893018 1065.53439,0.911893018 C1083.27737,0.911893018 1083.27737,67.911893 1101.02035,67.911893 C1118.76333,67.911893 1118.76333,0.911893018 1136.50631,0.911893018 C1154.24928,0.911893018 1154.24928,67.911893 1171.99226,67.911893 C1189.73524,67.911893 1189.73524,0.911893018 1207.47822,0.911893018 C1225.2212,0.911893018 1225.2212,67.911893 1242.96418,67.911893 C1260.70715,67.911893 1260.70715,0.911893018 1278.45013,0.911893018 C1296.19311,0.911893018 1296.19311,67.911893 1313.93609,67.911893 C1331.67907,67.911893 1331.67907,0.911893018 1349.42204,0.911893018 C1367.16502,0.911893018 1367.16502,67.911893 1384.908,67.911893 C1402.65098,67.911893 1402.65098,0.911893018 1420.39396,0.911893018 C1438.13694,0.911893018 1438.13694,67.911893 1455.87991,67.911893 C1473.62289,67.911893 1473.62289,0.911893018 1491.36587,0.911893018 C1508.46306,1 1508.90745,67.911893 1527.20508,68 C1545.5027,68.088107 1544.97956,1 1562.72253,1 C1580.46551,1 1580.46551,68 1598.20849,68 C1615.95147,68 1615.95147,1 1633.69445,1 C1651.43743,1 1651.43743,68 1669.1804,68 C1686.92338,68 1686.92338,1 1704.66636,1 C1722.40934,1 1722.40934,68 1740.15232,68 C1757.89529,68 1757.89529,1 1775.63827,1 C1793.38125,1 1793.38125,68 1811.12423,68 C1828.86721,68 1828.86721,1 1846.61019,1 C1864.35316,1 1864.35316,68 1882.09614,68 C1899.83912,68 1899.83912,1 1917.5821,1 C1935.32508,1 1935.32508,68 1953.06806,68 C1970.81103,68 1970.81103,1 1988.55401,1 C2006.29699,1 2006.29699,68 2024.03997,68 C2041.78295,68 2041.78295,1 2059.52593,1 C2077.2689,1 2077.2689,68 2095.01188,68 C2112.75486,68 2112.75486,1 2130.49784,1 C2148.24082,1 2148.24082,68 2165.9838,68 C2183.72677,68 2183.72677,1 2201.46975,1 C2219.21273,1 2219.21273,68 2236.95571,68 C2254.69869,68 2254.69869,1 2272.44166,1 C2290.18464,1 2290.18464,68 2307.92762,68 C2325.6706,68 2325.6706,1 2343.41358,1 C2361.15656,1 2361.15656,68 2378.89953,68 C2396.64251,68 2396.64251,1 2414.38549,1 C2432.12847,1 2432.12847,68 2449.87145,68 C2467.61443,68 2467.61443,1 2485.3574,1 C2503.10038,1 2503.10038,68 2520.84336,68 C2538.58634,68 2538.58634,1 2556.32932,1 C2574.0723,1 2574.0723,68 2591.81527,68 C2609.55825,68 2609.55825,1 2627.30123,1 C2645.04421,1 2645.04421,68 2662.78719,68 C2680.53017,68 2680.53017,1 2698.27314,1 C2716.01612,1 2716.01612,68 2733.7591,68 C2751.50208,68 2751.50208,1 2769.24506,1 C2786.98803,1 2786.98803,68 2804.73101,68 C2822.47399,68 2822.47399,1 2840.21697,1 C2857.95995,1 2857.95995,68 2875.70293,68 C2893.4459,68 2893.4459,1 2911.18888,1 C2928.93186,1 2928.93186,68 2946.67484,68 C2964.41782,68 2964.41782,1 2982.1608,1 C2999.25799,1.08810698 3006.17135,68.088107 3018,68.088107")
         .container
           .android-sensors_sub-title
-            h4.lang_en.lang(key="android-sensors_title")
+            h4.lang_en.lang(key="android-sensors_title") The simplest and the most convenient are virtual Android sensors
           .android-sensors_img
             svg.svg-center(version='1.1', baseprofile='full', width='6', height='165', xmlns='http://www.w3.org/2000/svg')
               path.android-sensors_path.android-sensors_svg-line(stroke="#fff" stroke-width="2" stroke-dasharray="0" fill="none" d="M3,0 L3,160")
@@ -197,25 +177,25 @@ html(lang="en")
       section.rotation-vector#rotation-vector
         .container
           .rotation-vector_sub-title
-            h4.lang_en.lang(key="rotation_vector_title")
+            h4.lang_en.lang(key="rotation_vector_title") We have an acceleration vector in the “absolute” coordinate system and we can implement Kalman filter
           .rotation-vector_info
             .rotation-vector_item
               .plus
               img(src="img/rotation-vector/and-dat.svg", alt="And dat")
-              h5.lang_en.lang(key="rotation_vector_item1_title")
-              p.lang_en.lang(key="rotation_vector_item1_desc")
+              h5.lang_en.lang(key="rotation_vector_item1_title") Virtual Android sensors
+              p.lang_en.lang(key="rotation_vector_item1_desc") We can use a LINEAR_ACCELERATION sensor for linear accelerations (excluding gravity force) and ROTATION_VECTOR sensor for device orientation
             .rotation-vector_item
               .equal
               img(src="img/rotation-vector/kalman.svg", alt="Kalman")
-              h5.lang_en.lang(key="rotation_vector_item2_title")
-              p.lang_en.lang(key="rotation_vector_item2_desc")
+              h5.lang_en.lang(key="rotation_vector_item2_title") Kalman filter
+              p.lang_en.lang(key="rotation_vector_item2_desc") We determine the state vector of the system, the transition matrix, the control vector, and other components of the Kalman filter. Then define the covariance noise matrix of the process and measurement noise. In this form, it is relatively easy to implement the filter
           .rotation-vector_item-logo
             .pulse_anim
               .pulse
               .pulse2
             img(src="img/logo.svg", alt="Logotype")
           .and-if-briefly
-            h4.lang_en.lang(key="rotation_vector_simple")
+            h4.lang_en.lang(key="rotation_vector_simple") To make the long story short…
             .and-if-briefly_images
               .and-if-briefly_img-wrap1
                 .and-if-briefly_img
@@ -238,96 +218,96 @@ html(lang="en")
                   img.location_pointer(src="img/rotation-vector/pin.svg", alt="Kalman")
       section.filter-parameters
         .container
-          h2.lang_en.lang(key="filter-parameters_title")
+          h2.lang_en.lang(key="filter-parameters_title") Filter parameters
           .filter-parameters_sub-title
-            h4.lang_en.lang(key="filter-parameters_subtitle1")
+            h4.lang_en.lang(key="filter-parameters_subtitle1") Now we have to determine the types of matrixes
           .filter-parameters_list
             .filter-parameters_item
               img(src="img/filter-parameters/1.svg", alt="")
-              p.lang_en.lang(key="filter-parameters_item1")
+              p.lang_en.lang(key="filter-parameters_item1") System state vector
             .filter-parameters_item
               img(src="img/filter-parameters/2.svg", alt="")
-              p.lang_en.lang(key="filter-parameters_item2")
+              p.lang_en.lang(key="filter-parameters_item2") State-transition model
             .filter-parameters_item
               img(src="img/filter-parameters/3.svg", alt="")
-              p.lang_en.lang(key="filter-parameters_item3")
+              p.lang_en.lang(key="filter-parameters_item3") Control-input mode
             .filter-parameters_item
               img(src="img/filter-parameters/4.svg", alt="")
-              p.lang_en.lang(key="filter-parameters_item4")
+              p.lang_en.lang(key="filter-parameters_item4") Control Vector
             .filter-parameters_item
               img(src="img/filter-parameters/5.svg", alt="")
-              p.lang_en.lang(key="filter-parameters_item5")
+              p.lang_en.lang(key="filter-parameters_item5") Observation model
           .several-operation
             .several-operation_sub-title
-              h4.lang_en.lang(key="several-operation_title")
-            p.lang_en.lang(key="several-operation_desc")
+              h4.lang_en.lang(key="several-operation_title") Perform several operations with matrices
+            p.lang_en.lang(key="several-operation_desc") The observation model maps the true state space into the observed space. In our case, it equals to identity matrix as we can get everything from a GPS receiver (speed and coordinates) and don’t need to convert it. If the receiver can’t get information about speed then an observation model changes to this:
             img.pic-1(src="img/filter-parameters/6.svg", alt="")
-            span.lang_en.lang(key="several-operation_pic1")
-            p.lang_en.lang(key="several-operation_p1")
+            span.lang_en.lang(key="several-operation_pic1") pic. 1
+            p.lang_en.lang(key="several-operation_p1") The second one shows the better result with a short-term loss of the GPS signal because the state vector is not affected by the last speed received from a receiver.
             img.pic-2(src="img/filter-parameters/7.svg", alt="")
-            span.lang_en.lang(key="several-operation_pic2")
-            p.lang_en.lang(key="several-operation_p2")
+            span.lang_en.lang(key="several-operation_pic2") pic.2 Covariance noise measurement matrix
+            p.lang_en.lang(key="several-operation_p2") If a receiver doesn’t provide information about speed. Otherwise:
             img.pic-3(src="img/filter-parameters/8.svg", alt="")
-            span.lang_en.lang(key="several-operation_pic3")
-            p.lang_en.lang(key="several-operation_p3")
+            span.lang_en.lang(key="several-operation_pic3") pic. 3
+            p.lang_en.lang(key="several-operation_p3") These values could be received in different ways. You can parse NMEA message and use HDOP value. Also, you can use Location class getAccuracy() method. We should know the direction to get speed to in our coordinate system. For this, we can use either course component from NMEA message or getBearing() method from Location class.
             img.pic-4(src="img/filter-parameters/9.svg", alt="")
             img.pic-5(src="img/filter-parameters/10.svg", alt="")
-            span.lang_en.lang(key="several-operation_pic4")
-            p.last-p.lang_en.lang(key="several-operation_p4")
+            span.lang_en.lang(key="several-operation_pic4") pic. 4 Process noise covariance matrix
+            p.last-p.lang_en.lang(key="several-operation_p4") Over time the positioning error due to the integration of accelerometer readings will increase. Therefore, we have to take GPS-coordinate as the result instead of accelerometer reading. Dt is the period between 2 update steps (obtaining of GPS-coordinates) in Kalman filter.
 
           .filter-parameters_sub-title2
-            h4.lang_en.lang(key="filter-parameters_subtitle2")
+            h4.lang_en.lang(key="filter-parameters_subtitle2") To make Kalman filter work, we have to bring all the data to the single coordinate system.
       section.geohash
         .container
-          h2.lang_en.lang(key="geohash_title")
+          h2.lang_en.lang(key="geohash_title") GeoHash
           .geohash_content
             .geohash_sub-title
-              h4.lang_en.lang(key="geohash_subtitle")
-            p.lang_en.lang(key="geohash_p1")
-            h4.lang_en.lang(key="geohash_subtitle2")
-            p.lang_en.lang(key="geohash_p2")
+              h4.lang_en.lang(key="geohash_subtitle") The algorithm for converting two coordinates of the form 42.8795949 (longitude), 74.5998444 (latitude) into one string
+            p.lang_en.lang(key="geohash_p1") In this project, it is used to solve 2 problems. First, it is necessary to somehow merge the nearby points to reduce the flow of redundant information. To do this, you can select a radius and merge all the points that fall into the circle with this radius. But how to choose the radius and center of this circle? Calculating the distance in spherical coordinates is a costly operation, so a GeoHash function is used to “join” fast coordinates. This function produces a hash as a string, the length of which is determined by the user and affects the encoding accuracy. The longer the hash length is, the smaller the region is and the greater accuracy of the coordinates is in one region. The maximum possible length of a GeoHash string is 12 characters. A very good result for our task shows hash with 7 and 8 precision.
+            h4.lang_en.lang(key="geohash_subtitle2") Another application of this function
+            p.lang_en.lang(key="geohash_p2") Another way to use this function is “jumps” filtering. We will assume that if the GPS receiver has given out more than 3 (user-defined count) coordinates with one hash, then this point is correct and it should be taken into account. If less — then, probably, this is some random value that does not need to be taken into account.
             .geohash_slider
               .geohash_slide(style="background-image: url('img/geohash/1.png')")
-                p.lang_en.lang(key="geohash_p3").geohash_slider-desc.geohash_slider-desc1
+                p.lang_en.lang(key="geohash_p3").geohash_slider-desc.geohash_slider-desc1 A route without the implementation of the GeoHash-based filter
               .geohash_slide(style="background-image: url('img/geohash/2.png')")
-                p.lang_en.lang(key="geohash_p3.2").geohash_slider-desc.geohash_slider-desc1
+                p.lang_en.lang(key="geohash_p3.2").geohash_slider-desc.geohash_slider-desc1 A route with GeoHash-based filter. The length of the string (accuracy) is 8. The minimum number of points with one geohash is 2
               .geohash_slide(style="background-image: url('img/geohash/3.png')")
-                p.lang_en.lang(key="geohash_p3.3").geohash_slider-desc.geohash_slider-desc1
-            p.lang_en.lang(key="geohash_p4")
-            h4.lang_en.lang(key="geohash_subtitle3")
-            p.lang_en.lang(key="geohash_p5")
-            p.lang_en.lang(key="geohash_p6").geohash_slider-desc.geohash_slider-desc2
+                p.lang_en.lang(key="geohash_p3.3").geohash_slider-desc.geohash_slider-desc1 A route with GeoHash-based filter. The length of the string (accuracy) is 7. The minimum number of points with one geohash is 3
+            p.lang_en.lang(key="geohash_p4") Examples above illustrate that GeoHash filter allows to significantly reduce the number of processing coordinates. It may be crucial if coordinates are planned to be processed by the server or to save the routes in the database.
+            h4.lang_en.lang(key="geohash_subtitle3") Result, conclusion and further improvements
+            p.lang_en.lang(key="geohash_p5") As a result, we wrote an Android module and a C library that implements all of the above filters. Visually routes became smoothed and calculation error was reduced.
+            p.lang_en.lang(key="geohash_p6").geohash_slider-desc.geohash_slider-desc2 Red points are GPS coordinate. Blue points — filtered values.
             .geohash_slider.geohash_slider2
               .geohash_slide(style="background-image: url('img/geohash/4.png')")
-            p.lang_en.lang(key="geohash_p7")
+            p.lang_en.lang(key="geohash_p7") Green line shows GPS data with significant nose. Red one - filtered data (firstly, by Kalman filter, than by filter based on GeoHash)
             .geohash_gif
               img.geohash_iphone(src="img/geohash/bigphone.png", alt="")
               img.geohash_phone-gif(src="img/gif1.gif", alt="Without filter")
-            p.lang_en.lang(key="geohash_p8")
+            p.lang_en.lang(key="geohash_p8") Two algorithms were used to calculate the distance. One of them is the Vincenti algorithm. It is used inside of the distanceBetween() method of the Location class. The second method: <a href='https://en.wikipedia.org/wiki/Great-circle_distance' target='_blank'>https://en.wikipedia.org/wiki/Great-circle_distance</a> (section with the haversine formula). Tests show that the results are almost the same, while the second option requires fewer resources. Yet, there are high chances that at greater distances the error will be greater. Within the city, both algorithms will operate the same way.
             .geohash_detail-blog
-              span.lang_en.lang(key="geohash_link") #[a(href="https://medium.com/@lezh1k.vohrer/b81f1026e06c", target="_blank" rel="nofollow") #[img(src="img/right.svg", alt="Right")] Детали расчетов можно посмотреть в блоге]
+              span.lang_en.lang(key="geohash_link") <a href='https://blog.maddevs.io/reduce-gps-data-error-on-android-with-kalman-filter-and-accelerometer-43594faed19c' target='_blank'><img src='img/right.svg', alt='Right'>You can see calculation details in our blog</a>
       section.use-and-develop
         .container
-          h2.lang_en.lang(key="use_dev_title")
+          h2.lang_en.lang(key="use_dev_title") Use and develop
           .use-and-develop_info
-            p.lang_en.lang(key="use_dev_desc")
+            p.lang_en.lang(key="use_dev_desc") The solution if licensed by <a href='https://opensource.org/licenses/MIT' target='_blank'>MIT</a>. Therefore, do not Forget about the copyrights and authorship
           .use-and-develop_btn
             a(href="https://github.com/maddevsio/mad-location-manager" target="_blank" rel="nofollow").fork-me-github
               i(class="fab fa-github")
               | Fork me on Github
           .main_links
-            span.lang_en.lang(key="use_dev_or").or
+            span.lang_en.lang(key="use_dev_or").or or
             a.main_links_doc(href="https://github.com/maddevsio/mad-location-manager/wiki/Theory" target="_blank" rel="nofollow")
               img(src="img/right.svg", alt="Right")
-              span.lang_en.lang(key="use_dev_docs")
+              span.lang_en.lang(key="use_dev_docs") Documentation and Theory
       section.footer#footer
         .container
-          h2.lang_en.lang(key="footer_title")
+          h2.lang_en.lang(key="footer_title") All the magic happened thanks to MadDevs
           .footer_logo
             img(src="img/footer/mad-logo.svg", alt="Mad Devs")
             a(href="https://maddevs.io/" target='_blank') https://maddevs.io/
           .footer_text
-            p.lang_en.lang(key="footer_desc")
+            p.lang_en.lang(key="footer_desc") To express gratitude or to get consultation or assistance in the system implementation write to <a href='mailto:rock@maddevs.io' target='_blank'>rock@maddevs.io <img src='img/footer/hand.svg' alt='Hand'></a>
           .footer_soc-icons
             a(href="https://github.com/maddevsio" target='_blank' rel="nofollow")
               i(class="fab fa-github")
@@ -355,6 +335,11 @@ html(lang="en")
     section.copy-right
       p © Mad Devs, #[span#copyright_years]
     //- //////////////////// End Code /////////////////////
+    //---------Change the file with the styles for the corresponding-------\\  
+    link(rel="stylesheet" href="css/styles/index.min.css")
+    
+    link(rel="stylesheet" href="css/libs.min.css")
+    link(rel="stylesheet" href="css/base.min.css")
     // Global site tag (gtag.js) - Google Analytics
     script(async, src='https://www.googletagmanager.com/gtag/js?id=UA-83208754-6')
     script.

@@ -13,9 +13,10 @@ gulp.task('browser-sync', function() {
 	});
 });
 
-gulp.task('watch', ['sass', 'pug', 'script', 'libs', 'browser-sync'], function() {
+gulp.task('watch', ['sass', 'header', 'pug', 'script', 'libs', 'browser-sync'], function() {
 	gulp.watch('app/sass/styles/*.sass', ['styles']);
 	gulp.watch('app/sass/*.sass', ['sass']);
+	gulp.watch('app/sass/header.sass', ['header']);
 	gulp.watch('app/*.html', browserSync.reload);
 	gulp.watch('app/pug/*.pug', ['pug']);
 	gulp.watch('app/js/script.js', ['script']);
