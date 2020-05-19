@@ -8,11 +8,7 @@ try {
     env.BUILD_TAG = "v.${env.BUILD_NUMBER}"
     env.REPO = 'mad-locations-manager'
     env.SERVICE = 'mad-locations-manager'
-<<<<<<< HEAD
-//    env.SERVICE_PARAMS = "--restart=always --log-driver=syslog --log-opt tag=docker/${env.REPO} -e VIRTUAL_HOST=mlm.maddevs.co -e VIRTUAL_PORT=80 -e LETSENCRYPT_HOST=mlm.maddevs.co -e LETSENCRYPT_EMAIL=admin@maddevs.co"
-=======
    // env.SERVICE_PARAMS = "--restart=always --log-driver=syslog --log-opt tag=docker/${env.REPO} -e VIRTUAL_HOST=mlm.maddevs.co -e VIRTUAL_PORT=80 -e LETSENCRYPT_HOST=mlm.maddevs.co -e LETSENCRYPT_EMAIL=admin@maddevs.co"
->>>>>>> 89cbf07908c8a7197c434f7c5081265fb2e6a574
  
     stage 'Checkout'
     deleteDir()

@@ -29,7 +29,8 @@ gulp.task('build', ['removedist', 'buildhtml', 'imagemin', 'sass', 'libs'], func
 	]).pipe(gulp.dest('dist/fonts'));
 
 	var buildJs = gulp.src([
-		'app/js/*.js'
+		'app/js/*.js',
+		'app/js/*.json',
 	]).pipe(gulp.dest('dist/js'));
 
 	var buildWebfonts = gulp.src([
