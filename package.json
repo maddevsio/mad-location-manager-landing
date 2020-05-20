@@ -11,7 +11,7 @@
     "start": "npm i && bower i",
     "prod": "gulp build"
   },
-  "author": "MadDevs",
+  "author": "Mad Devs",
   "license": "ISC",
   "devDependencies": {
     "@mfjs/babel-preset-env": "^1.1.1",
