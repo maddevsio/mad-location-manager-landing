@@ -49,5 +49,5 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
     - name: Change metadata for ru and en
       run: |
-        aws s3 cp s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru --metadata '{"Content-Type":"text/html"}'
-        aws s3 cp s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en --metadata '{"Content-Type":"text/html"}'
+        aws s3 cp dist/ru s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru --metadata '{"Content-Type":"text/html"}'
+        aws s3 cp dist/en s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en --metadata '{"Content-Type":"text/html"}'
