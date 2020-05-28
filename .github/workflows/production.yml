@@ -27,10 +27,6 @@ jobs:
     - name: Build
       run: |
         npm run prod
-    - name: Mv html to 
-      run: |
-        mv dist/index_en.html dist/en
-        mv dist/index_ru.html dist/ru
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
       with:
@@ -47,7 +43,7 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
-    - name: Change metadata for ru and en
+    - name: Rename ru and en
       run: |
-        aws s3 cp dist/ru s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru --metadata '{"Content-Type":"text/html"}'
-        aws s3 cp dist/en s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en --metadata '{"Content-Type":"text/html"}'
+        aws s3 mv s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/index_ru.html s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru --metadata '{"Content-Type":"text/html"}'
+        aws s3 mv s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/index_en.html s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en --metadata '{"Content-Type":"text/html"}'
