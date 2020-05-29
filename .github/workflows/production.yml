@@ -1,0 +1,49 @@
+name: Production Build
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [10.x]
+        
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install bower gulp
+      run: |
+        npm  i -g bower gulp
+    - name: Install dependensies
+      run: |
+        npm start
+    - name: Build
+      run: |
+        npm run prod
+    - name: Deploy to S3
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: ${{ secrets.AWS_REGION }}
+        SOURCE_DIR: "dist"
+    - name: Configure AWS Credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.AWS_REGION }}
+    - name: Rename ru and en
+      run: |
+        aws s3 mv s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/index_ru.html s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/ru --metadata '{"Content-Type":"text/html"}'
+        aws s3 mv s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/index_en.html s3://${{ secrets.AWS_PRODUCTION_BUCKET_NAME }}/en --metadata '{"Content-Type":"text/html"}'
