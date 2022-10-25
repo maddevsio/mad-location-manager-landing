@@ -37,5 +37,5 @@ npm run dev
 
 ## Build project for production
 ```
-npm run prod
+npm run build
 ```
