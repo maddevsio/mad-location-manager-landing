@@ -39,3 +39,5 @@ npm run dev
 ```
 npm run build
 ```
+
+Site hosted on `CDN - cloudfront`
