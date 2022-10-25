@@ -22,12 +22,12 @@ npm  i -g bower gulp
 
 #### Install local dependencies
 ```
-npm start
+npm run init
 ```
 
-#### Server startup
+#### Run dev server
 ```
-gulp
+npm run dev
 ```
 
 #### After starting the server, two links will be available
