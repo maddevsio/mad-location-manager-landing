@@ -10,7 +10,7 @@
   "scripts": {
     "init": "npm i && bower i",
     "dev": "gulp",
-    "prod": "gulp build"
+    "build": "gulp build"
   },
   "author": "Mad Devs",
   "license": "ISC",
