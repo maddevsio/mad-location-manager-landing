@@ -25,10 +25,10 @@ jobs:
         npm  i -g bower gulp
     - name: Install dependensies
       run: |
-        npm start
+        npm run init
     - name: Build
       run: |
-        npm run prod
+        npm run build
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
       with:
