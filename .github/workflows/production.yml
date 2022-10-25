@@ -25,7 +25,7 @@ jobs:
         npm  i -g bower gulp
     - name: Install dependensies
       run: |
-        npm start
+        npm run init
     - name: Build
       run: |
         npm run prod
